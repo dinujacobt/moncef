@@ -1,1049 +1,866 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Title of the document we</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
-        <!--custom popus styles-->
-        <link href="css/popups.css" rel="stylesheet" type="text/css"/>
-    </head>
 
-    <body>
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup1">Open Modal 1</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup2">Open Modal 2</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup3">Open Modal 3</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup4">Open Modal 4</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup5">Open Modal 5</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup6">Open Modal 6</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup7">Open Modal 7</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup8">Open Modal 8</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup9">Open Modal 9</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup10">Open Modal 10</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup11">Open Modal 11</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup12">Open Modal 12</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup13">Open Modal 13 - 16</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup17">Open Modal 17 - 19</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup20">Open Modal 20</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup21">Open Modal 21</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup22">Open Modal 22</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup23">Open Modal 23</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup24">Open Modal 24</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup25">Open Modal 25</button>
-        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup26">Open Modal 26</button>
-        <!-- Modal -->
-        <div id="popup1" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
+<head>
+    <title>Title of the document we</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
+    <link href="css/popups.css" rel="stylesheet" type="text/css" />
+</head>
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                        <div class="steps">
-
-                            <ul>
-                                <li class="active">1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                            </ul>
-
-                        </div>
-                        <div class="heading">
-                            <h3>Are you looking for a complete FF &AMP; E schedule or only specification sheets?</h3>
-                        </div>
+<body>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup1">Open Modal 1</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup2">Open Modal 2</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup3">Open Modal 3</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup4">Open Modal 4</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup5">Open Modal 5</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup6">Open Modal 6</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup7">Open Modal 7</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup8">Open Modal 8</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup9">Open Modal 9</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup10">Open Modal 10</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup11">Open Modal 11</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup12">Open Modal 12</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup13">Open Modal 13 - 16</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup17">Open Modal 17 - 19</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup20">Open Modal 20</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup21">Open Modal 21</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup22">Open Modal 22</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup23">Open Modal 23</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup24">Open Modal 24</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup25">Open Modal 25</button>
+    <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup26">Open Modal 26</button>
+    <div id="popup1" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="steps">
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
                     </div>
-                    <div class="modal-body">
-                        <div class="image-container">
-                            <img class="img-responsive content-img" src="images/Pop up supporting-02.png" alt=""/>
-                        </div>
-                        <div class="nav-btn-container">
-                            <button class="btn btn1 inb">complete FF &AMP; E and schedule </button>
-                            <span class="inb">or</span>
-                            <button class="btn inb green-btn">only specifications</button>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
+                    <div class="heading">
+                        <h3>Are you looking for a complete FF &AMP; E schedule or only specification sheets?</h3>
                     </div>
                 </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup2" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                        <div class="steps">
-
-                            <ul>
-                                <li>1</li>
-                                <li class="active">2</li>
-                                <li>3</li>
-                                <li>4</li>
-                            </ul>
-
-                        </div>
-                        <div class="heading">
-                            <h3>Do you want to add signatories?</h3>
-                        </div>
+                <div class="modal-body">
+                    <div class="image-container">
+                        <img class="img-responsive content-img" src="images/Pop up supporting-02.png" alt="" />
                     </div>
-                    <div class="modal-body">
-                        <div class="image-container sec-mod inb">
-                            <img class="img-responsive content-img" src="images/Pop up supporting-03.png" alt=""/>
-                        </div>
-                        <div class="nav-btn-container inb sec-mod">
-                            <button class="btn btn1">yes</button>
-                            <span class="">or</span>
-                            <button class="btn btn1">no</button>
-                        </div>
+                    <div class="nav-btn-container">
+                        <button class="btn btn1 inb">complete FF &AMP; E and schedule </button>
+                        <span class="inb">or</span>
+                        <button class="btn inb green-btn">only specifications</button>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-                    <a href="#">
-                        <div class="modal-prev">
-                            <!--<span class="previous_text">previous</span>-->
-                            <div class="icon" data-toggle="tooltip" title="Previous">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </div>
-
-                        </div>
-                    </a>
                 </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup3" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                        <div class="steps">
-
-                            <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li class="active">3</li>
-                                <li>4</li>
-                            </ul>
-
-                        </div>
-                        <div class="heading">
-                            <h3>Do you want to include quotation files?</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="image-container sec-mod inb">
-                            <img class="img-responsive content-img sm-img inb" src="images/Pop up supporting-02.png" alt=""/>
-                            <div class="inb">
-                                <span class="glyphicon glyphicon-plus" ></span>
-                            </div>
-                            <img class="img-responsive content-img sm-img inb "  src="images/Pop up supporting-04.png" alt=""/>
-                        </div>
-                        <div class="nav-btn-container inb sec-mod">
-                            <button class="btn btn1">yes</button>
-                            <span class="">or</span>
-                            <button class="btn btn1">no</button>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-                    <a href="#">
-                        <div class="modal-prev">
-                            <!--<span class="previous_text">previous</span>-->
-                            <div class="icon" data-toggle="tooltip" title="Previous">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </div>                            
-                        </div>
-                    </a>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
                 </div>
-
             </div>
-
-
         </div>
-        <div id="popup4" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-                        <div class="steps">
-
-                            <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li class="active">4</li>
-                            </ul>
-
-                        </div>
-                        <div class="heading">
-                            <h3>Detail your cover</h3>
-                        </div>
+    </div>
+    <div id="popup2" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="steps">
+                        <ul>
+                            <li>1</li>
+                            <li class="active">2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
                     </div>
-                    <div class="modal-body">
-                        <form action="#" >
-                            <div class="col-md-6">
-                                <div class="cover-details">
-                                    <div class="item m-b-10">
-                                        <span class="property_name">complete project name</span>
-                                        <input type="text" class="proprty_val" placeholder="Malicon Project"/>
-
-                                    </div>
-                                    <div class="item m-b-10">
-                                        <span class="property_name">project typology</span>
-                                        <select class="proprty_val">
-                                            <option value="" selected="">Hotel</option>
-                                            <option value="">Hotel1</option>
-                                        </select>
-                                    </div>
-                                    <div class="item m-b-10">
-                                        <span class="property_name">client name</span>
-                                        <input type="text" class="proprty_val" placeholder="Meeras"/>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="cover-details">
-                                    <div class="item">
-                                        <span class="property_name">project location</span>
-                                        <input type="text" class="proprty_val m-b-10" placeholder="Location"/>
-                                        <input type="text" class="proprty_val m-b-10" placeholder="country"/>
-                                        <input type="text" class="proprty_val" placeholder="area"/>
-                                    </div>    
-                                </div>
-                            </div>
-                        </form>
+                    <div class="heading">
+                        <h3>Do you want to add signatories?</h3>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-                    <a href="#">
-                        <div class="modal-prev">
-                            <!--<span class="previous_text">previous</span>-->
-                            <div class="icon" data-toggle="tooltip" title="Previous">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </div>                            
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="modal-generate">
-                            <!--<span class="previous_text">previous</span>-->
-                            <span>Genereate</span>                          
-                        </div>
-                    </a>
                 </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup5" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3>We are processing...<br/>this could take a few seconds</h3>
-                        </div>
+                <div class="modal-body">
+                    <div class="image-container sec-mod inb">
+                        <img class="img-responsive content-img" src="images/Pop up supporting-03.png" alt="" />
                     </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <img class="img-responsive" src="images/spinner.gif" alt=""/>
-                        </div>
+                    <div class="nav-btn-container inb sec-mod">
+                        <button class="btn btn1">yes</button>
+                        <span class="">or</span>
+                        <button class="btn btn1">no</button>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
                 </div>
-
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+                <a href="#">
+                    <div class="modal-prev">
+                        <div class="icon" data-toggle="tooltip" title="Previous">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-
         </div>
-        <div id="popup6" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-
-                    <div class="modal-body grey-bg ab-image">
+    </div>
+    <div id="popup3" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="steps">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li class="active">3</li>
+                            <li>4</li>
+                        </ul>
+                    </div>
+                    <div class="heading">
+                        <h3>Do you want to include quotation files?</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="image-container sec-mod inb">
+                        <img class="img-responsive content-img sm-img inb" src="images/Pop up supporting-02.png" alt="" />
+                        <div class="inb">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </div>
+                        <img class="img-responsive content-img sm-img inb " src="images/Pop up supporting-04.png" alt="" />
+                    </div>
+                    <div class="nav-btn-container inb sec-mod">
+                        <button class="btn btn1">yes</button>
+                        <span class="">or</span>
+                        <button class="btn btn1">no</button>
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+                <a href="#">
+                    <div class="modal-prev">
+                        <div class="icon" data-toggle="tooltip" title="Previous">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="popup4" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="steps">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li class="active">4</li>
+                        </ul>
+                    </div>
+                    <div class="heading">
+                        <h3>Detail your cover</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
                         <div class="col-md-6">
-                            <div class="ab-image">
-                                <img class="img-responsive lg-img" src="images/Pop up supporting-04.png" alt=""/>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="head">
-                                <h3>FF&AMP; E schedule added to <strong>Malicon</strong>/Bedroom</h3>
-                                <div class="nav-btn-container btn-list">
-                                    <button class="btn btn1 m-b-10">go to project</button>
-                                    <button class="btn btn1 m-b-10">handover project</button>
-                                    <button class="btn btn1 m-b-10">download</button>
-                                    <button class="btn green-btn m-b-10">print</button>
-                                    <button class="btn btn1 m-b-10">go to home page</button>
+                            <div class="cover-details">
+                                <div class="item m-b-10">
+                                    <span class="property_name">complete project name</span>
+                                    <input type="text" class="proprty_val" placeholder="Malicon Project" />
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup7" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <div class="heading">
-                            <h3>Specification</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body specs-modal no-padding">
-                        <div class="specs">
-                            <div class="item">
-                                <div class="prop_num">
-                                    <span class="number">1</span>
-                                    <span class="desc">PRODUCT</span>
-                                </div>
-
-                                <div class="input m-r-10-p">
-                                    <label>Quanity</label>
-                                    <input type="text" class="field"/><span class="help-text">Units</span>
-                                </div>
-                                <div class="input ">
-                                    <label>Remarks <span>[ optional ]</span></label>
-                                    <input type="text" class="field l-ip"/>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prop_num">
-                                    <span class="number">2</span>
-                                    <span class="desc">PROJECT</span>
-                                </div>
-
-                                <div class="input ">
-                                    <label>Existing Project</label>
-                                    <select class="field">
-                                        <option value=""></option>
+                                <div class="item m-b-10">
+                                    <span class="property_name">project typology</span>
+                                    <select class="proprty_val">
+                                        <option value="" selected="">Hotel</option>
+                                        <option value="">Hotel1</option>
                                     </select>
                                 </div>
-                                <div class="or_div">
-                                    <span>or</span>
+                                <div class="item m-b-10">
+                                    <span class="property_name">client name</span>
+                                    <input type="text" class="proprty_val" placeholder="Meeras" />
                                 </div>
-                                <div class="input ">
-                                    <label>new project</label>
-                                    <input type="text" class="field"/>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prop_num">
-                                    <span class="number">3</span>
-                                    <span class="desc">SERVICE</span>
-                                </div>
-
-                                <div class="assisatnce">
-                                    <div class="image">
-                                        <img src="images/images.jpg" class="img-responsive" alt=""/>
-                                        <span>Paul</span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Need urgent assistance from your agent?</p>
-                                    </div>
-                                    <div class="btn-set">
-                                        <button>Yes</button>
-                                        <span>or</span>
-                                        <button>no</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup8" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <div class="heading">
-                            <h3>Specification</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body specs-modal no-padding">
-                        <div class="specs">
-                            <div class="item green-bg">
-                                <div class="prop_num">
-                                    <span class="number">1</span>
-                                    <span class="desc">PRODUCT</span>
-                                </div>
-
-                                <div class="input m-r-10-p">
-                                    <label>Quanity</label>
-                                    <input type="text" class="field" value="15"/><span class="help-text">Units</span>
-                                </div>
-                                <div class="input ">
-                                    <label>Remarks <span>[ optional ]</span></label>
-                                    <input type="text" class="field l-ip" value="lorem ipsum"/>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prop_num">
-                                    <span class="number">2</span>
-                                    <span class="desc">PROJECT</span>
-                                </div>
-
-                                <div class="input ">
-                                    <label>Existing Project</label>
-                                    <select class="field">
-                                        <option value=""></option>
-                                    </select>
-                                </div>
-                                <div class="or_div">
-                                    <span>or</span>
-                                </div>
-                                <div class="input ">
-                                    <label>new project</label>
-                                    <input type="text" class="field"/>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="prop_num">
-                                    <span class="number">3</span>
-                                    <span class="desc">SERVICE</span>
-                                </div>
-
-                                <div class="assisatnce">
-                                    <div class="image">
-                                        <img src="images/images.jpg" class="img-responsive" alt=""/>
-                                        <span>Paul</span>
-                                    </div>
-                                    <div class="text">
-                                        <p>Need urgent assistance from your agent?</p>
-                                    </div>
-                                    <div class="btn-set">
-                                        <button>Yes</button>
-                                        <span>or</span>
-                                        <button>no</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup9" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3><b>Please wait</b><br/>generation of specification in progress</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <img class="img-responsive" src="images/spinner.gif" alt=""/>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup10" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-
-                    <div class="modal-body grey-bg ab-image h424">
-                        <div class="col-md-6">
-                            <div class="ab-image">
-                                <img class="img-responsive lg-img" src="images/Pop up supporting-04.png" alt=""/>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="head">
-                                <h3>Spec. added to <strong>Malicon</strong>/Bedroom</h3>
-                                <div class="nav-btn-container btn-list">
-                                    <button class="btn btn1 m-b-10">go to project</button>
-                                    <button class="btn btn1 m-b-10">edit spec</button>
-                                    <button class="btn btn1 m-b-20">chat with agent</button>
-                                    <button class="btn green-btn m-b-10">print spec</button>
-                                    <button class="btn btn1 m-b-10 green-btn">download spec</button>
-                                    <button class="btn">go to home page</button>
+                            <div class="cover-details">
+                                <div class="item">
+                                    <span class="property_name">project location</span>
+                                    <input type="text" class="proprty_val m-b-10" placeholder="Location" />
+                                    <input type="text" class="proprty_val m-b-10" placeholder="country" />
+                                    <input type="text" class="proprty_val" placeholder="area" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+                <a href="#">
+                    <div class="modal-prev">
+                        <div class="icon" data-toggle="tooltip" title="Previous">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="modal-generate">
+                        <span>Genereate</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="popup5" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>We are processing...
+                            <br/>this could take a few seconds</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
+                        <img class="img-responsive" src="images/spinner.gif" alt="" />
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup6" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body grey-bg ab-image">
+                    <div class="col-md-6">
+                        <div class="ab-image">
+                            <img class="img-responsive lg-img" src="images/Pop up supporting-04.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <h3>FF&AMP; E schedule added to
+                                <strong>Malicon</strong>/Bedroom</h3>
+                            <div class="nav-btn-container btn-list">
+                                <button class="btn btn1 m-b-10">go to project</button>
+                                <button class="btn btn1 m-b-10">handover project</button>
+                                <button class="btn btn1 m-b-10">download</button>
+                                <button class="btn green-btn m-b-10">print</button>
+                                <button class="btn btn1 m-b-10">go to home page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup7" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Specification</h3>
+                    </div>
+                </div>
+                <div class="modal-body specs-modal no-padding">
+                    <div class="specs">
+                        <div class="item">
+                            <div class="prop_num">
+                                <span class="number">1</span>
+                                <span class="desc">PRODUCT</span>
+                            </div>
+                            <div class="input m-r-10-p">
+                                <label>Quanity</label>
+                                <input type="text" class="field" />
+                                <span class="help-text">Units</span>
+                            </div>
+                            <div class="input ">
+                                <label>Remarks
+                                    <span>[ optional ]</span>
+                                </label>
+                                <input type="text" class="field l-ip" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="prop_num">
+                                <span class="number">2</span>
+                                <span class="desc">PROJECT</span>
+                            </div>
+                            <div class="input ">
+                                <label>Existing Project</label>
+                                <select class="field">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="or_div">
+                                <span>or</span>
+                            </div>
+                            <div class="input ">
+                                <label>new project</label>
+                                <input type="text" class="field" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="prop_num">
+                                <span class="number">3</span>
+                                <span class="desc">SERVICE</span>
+                            </div>
+                            <div class="assisatnce">
+                                <div class="image">
+                                    <img src="images/images.jpg" class="img-responsive" alt="" />
+                                    <span>Paul</span>
+                                </div>
+                                <div class="text">
+                                    <p>Need urgent assistance from your agent?</p>
+                                </div>
+                                <div class="btn-set">
+                                    <button>Yes</button>
+                                    <span>or</span>
+                                    <button>no</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
                 </div>
-
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
             </div>
-
-
         </div>
-        <div id="popup11" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <div class="heading">
-                            <h3>Specification updated</h3>
+    </div>
+    <div id="popup8" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Specification</h3>
+                    </div>
+                </div>
+                <div class="modal-body specs-modal no-padding">
+                    <div class="specs">
+                        <div class="item green-bg">
+                            <div class="prop_num">
+                                <span class="number">1</span>
+                                <span class="desc">PRODUCT</span>
+                            </div>
+                            <div class="input m-r-10-p">
+                                <label>Quanity</label>
+                                <input type="text" class="field" value="15" />
+                                <span class="help-text">Units</span>
+                            </div>
+                            <div class="input ">
+                                <label>Remarks
+                                    <span>[ optional ]</span>
+                                </label>
+                                <input type="text" class="field l-ip" value="lorem ipsum" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="prop_num">
+                                <span class="number">2</span>
+                                <span class="desc">PROJECT</span>
+                            </div>
+                            <div class="input ">
+                                <label>Existing Project</label>
+                                <select class="field">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="or_div">
+                                <span>or</span>
+                            </div>
+                            <div class="input ">
+                                <label>new project</label>
+                                <input type="text" class="field" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="prop_num">
+                                <span class="number">3</span>
+                                <span class="desc">SERVICE</span>
+                            </div>
+                            <div class="assisatnce">
+                                <div class="image">
+                                    <img src="images/images.jpg" class="img-responsive" alt="" />
+                                    <span>Paul</span>
+                                </div>
+                                <div class="text">
+                                    <p>Need urgent assistance from your agent?</p>
+                                </div>
+                                <div class="btn-set">
+                                    <button>Yes</button>
+                                    <span>or</span>
+                                    <button>no</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="modal-body">
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup9" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>
+                            <b>Please wait</b>
+                            <br/>generation of specification in progress</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
+                        <img class="img-responsive" src="images/spinner.gif" alt="" />
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup10" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body grey-bg ab-image h424">
+                    <div class="col-md-6">
+                        <div class="ab-image">
+                            <img class="img-responsive lg-img" src="images/Pop up supporting-04.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <h3>Spec. added to
+                                <strong>Malicon</strong>/Bedroom</h3>
+                            <div class="nav-btn-container btn-list">
+                                <button class="btn btn1 m-b-10">go to project</button>
+                                <button class="btn btn1 m-b-10">edit spec</button>
+                                <button class="btn btn1 m-b-20">chat with agent</button>
+                                <button class="btn green-btn m-b-10">print spec</button>
+                                <button class="btn btn1 m-b-10 green-btn">download spec</button>
+                                <button class="btn">go to home page</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup11" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Specification updated</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="success-btns">
+                        <button class="btn m-b-20">go to project</button>
+                        <button class="btn m-b-20">go to home page</button>
+                        <button class="btn m-b-20">close</button>
+                    </div>
+                </div>
+                <div class="modal-close success">
+                    <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup12" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>
+                            <strong>Are you sure?</strong>
+                            <br/>by clicking on yes you will delete the specification</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
                         <div class="success-btns">
-                            <button class="btn m-b-20">go to project</button>
-                            <button class="btn m-b-20">go to home page</button>
-                            <button class="btn m-b-20">close</button>
-                        </div>
-                    </div>
-
-                    <div class="modal-close success">
-                        <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup12" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3><strong>Are you sure?</strong><br/>by clicking on yes you will delete the specification</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <div class="success-btns">
-                                <div class="auto-margin">
-                                    <button class="btn inb">yes</button>                                
-                                    <button class="btn inb ">no</button>
-                                </div>
+                            <div class="auto-margin">
+                                <button class="btn inb">yes</button>
+                                <button class="btn inb ">no</button>
                             </div>
                         </div>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
                 </div>
-
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
             </div>
-
-
         </div>
-        <div id="popup13" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <div class="heading">
-                            <h3>Share product</h3>
-                        </div>
+    </div>
+    <div id="popup13" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Share product</h3>
                     </div>
-                    <div class="modal-body mod13">
-                        <form action="#" >
-                            <div class="col-md-6 ">
-                                <div class="bg-image">
-                                    <div class="full">
-                                        <div class="text">
-                                            <p><strong>Kimino</strong></p>
-                                            <p>by Amura</p>
+                </div>
+                <div class="modal-body mod13">
+                    <form action="#">
+                        <div class="col-md-6 ">
+                            <div class="bg-image">
+                                <div class="full">
+                                    <div class="text">
+                                        <p>
+                                            <strong>Kimino</strong>
+                                        </p>
+                                        <p>by Amura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="share_group">
+                                <p class="share">SHARE WITH</p>
+                                <div class="panel-group" id="faqAccordion">
+                                    <div class="panel panel-default ">
+                                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share1">
+                                            <h4 class="panel-title">
+                                                <a href="#" class="ing">workgroup</a>
+                                            </h4>
+                                        </div>
+                                        <div id="share1" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <select class="inp">
+                                                    <option value="">select workgroup</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default ">
+                                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share2">
+                                            <h4 class="panel-title">
+                                                <a href="#" class="ing">e-mail</a>
+                                            </h4>
+                                        </div>
+                                        <div id="share2" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <input class="inp m-b-10" placeholder="name" />
+                                                <input class="inp" name="" placeholder="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default ">
+                                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share3">
+                                            <h4 class="panel-title">
+                                                <a href="#" class="ing">social network</a>
+                                            </h4>
+                                        </div>
+                                        <div id="share3" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <a class="inb" data-toggle="tooltip" title="facebbok" href="#">
+                                                    <img class="img-responsive" src="images/fb.png" alt="" />
+                                                </a>
+                                                <a class="inb" data-toggle="tooltip" title="instagram" href="#">
+                                                    <img class="img-responsive" src="images/insta.png" alt="" />
+                                                </a>
+                                                <a class="inb" data-toggle="tooltip" title="pintrest" href="#">
+                                                    <img class="img-responsive" src="images/pinterest.png" alt="" />
+                                                </a>
+                                                <a class="inb" data-toggle="tooltip" title="Linkedin" href="#">
+                                                    <img class="img-responsive" src="images/in.png" alt="" />
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="share_group">
-                                    <p class="share">SHARE WITH</p>
-                                    <div class="panel-group" id="faqAccordion">
-                                        <div class="panel panel-default ">
-                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share1">
-                                                <h4 class="panel-title">
-                                                    <a href="#" class="ing">workgroup</a>
-                                                </h4>
-                                            </div>
-                                            <div id="share1" class="panel-collapse collapse" style="height: 0px;">
-                                                <div class="panel-body">
-                                                    <select class="inp">
-                                                        <option value="">select workgroup</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+                <a href="#">
+                    <div class="modal-generate">
+                        <span>SHARE</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="popup17" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Share specification</h3>
+                    </div>
+                </div>
+                <div class="modal-body mod13">
+                    <form action="#">
+                        <div class="col-md-6 ">
+                            <div class="bg-image">
+                                <div class="full">
+                                    <div class="text">
+                                        <p>ARMCHAIR</p>
+                                        <p class="m-b-20">Kimino by Amura</p>
+                                        <p>Project</p>
+                                        <p>
+                                            <strong>MALICON </strong>/ lobby</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="share_group">
+                                <p class="share">SHARE WITH</p>
+                                <div class="panel-group" id="faqAccordion2">
+                                    <div class="panel panel-default ">
+                                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share4">
+                                            <h4 class="panel-title">
+                                                <a href="#" class="ing">workgroup</a>
+                                            </h4>
                                         </div>
-                                        <div class="panel panel-default ">
-                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share2">
-                                                <h4 class="panel-title">
-                                                    <a href="#" class="ing">e-mail</a>
-                                                </h4>
-                                            </div>
-                                            <div id="share2" class="panel-collapse collapse" style="height: 0px;">
-                                                <div class="panel-body">
-                                                    <input class="inp m-b-10" placeholder="name"/>
-                                                    <input class="inp" name="" placeholder="email">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default ">
-                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share3">
-                                                <h4 class="panel-title">
-                                                    <a href="#" class="ing">social network</a>
-                                                </h4>
-                                            </div>
-                                            <div id="share3" class="panel-collapse collapse" style="height: 0px;">
-                                                <div class="panel-body">
-                                                    <a class="inb" data-toggle="tooltip" title="facebbok" href="#"><img class="img-responsive" src="images/fb.png" alt=""/></a>
-                                                    <a class="inb" data-toggle="tooltip" title="instagram" href="#"><img class="img-responsive" src="images/insta.png" alt=""/></a>
-                                                    <a class="inb" data-toggle="tooltip" title="pintrest" href="#"><img class="img-responsive" src="images/pinterest.png" alt=""/></a>
-                                                    <a class="inb" data-toggle="tooltip" title="Linkedin" href="#"><img class="img-responsive" src="images/in.png" alt=""/></a>
-                                                </div>
+                                        <div id="share4" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <input class="inp m-b-10" placeholder="name" value="MALICON work group" />
+                                                <select class="inp">
+                                                    <option value="">select workgroup</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="panel panel-default ">
+                                        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share5">
+                                            <h4 class="panel-title">
+                                                <a href="#" class="ing">e-mail</a>
+                                            </h4>
+                                        </div>
+                                        <div id="share5" class="panel-collapse collapse" style="height: 0px;">
+                                            <div class="panel-body">
+                                                <input class="inp m-b-10" placeholder="name" />
+                                                <input class="inp" name="" placeholder="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+                <a href="#">
+                    <div class="modal-generate">
+                        <span>SHARE</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="popup20" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>
+                            <b>Please wait</b>
+                            <br/>updating projects</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
+                        <img class="img-responsive" src="images/spinner.gif" alt="" />
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup21" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>
+                            <b>Please wait</b>
+                            <br/>loading project specifications</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
+                        <img class="img-responsive" src="images/spinner.gif" alt="" />
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup22" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>Your quotation request has been sent</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="full_modal_close">
+                        <button class="close-btn" aria-label="Close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span>close</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-close success">
+                    <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup23" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Inspiration added</h3>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="success-btns">
+                        <button class="btn m-b-20">go to inspiration basket</button>
+                        <button class="btn m-b-20">go back to previous page</button>
+                        <button class="btn m-b-20">go to homepage</button>
+                        <button class="btn m-b-20">close</button>
+                    </div>
+                </div>
+                <div class="modal-close success">
+                    <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup24" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header processing">
+                    <div class="heading">
+                        <h3>
+                            <strong>MALICON</strong> / lobby
+                            <br/>This will remove the project from your project list.
+                            <br/>Are you sure you want to permanently delete this project?</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="modal-loader">
+                        <div class="success-btns">
+                            <div class="auto-margin">
+                                <button class="btn inb">yes</button>
+                                <button class="btn inb ">no</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup25" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>What is your reason for deleting the project?</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="checklists">
+                        <form action="#">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> the project has been cancelled. </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> handovered, not concerned anymore. </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> I do not work for the concerned project anymore. </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> theKontainer is not relevant to me. </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> too expensive </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="">
+                                <label class="form-check-label" for="defaultCheck1"> other reasons </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup26" class="modal fade popups close-btn" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="heading">
+                        <h3>Forgot your password?</h3>
+                    </div>
+                </div>
+                <div class="modal-body m-b-10">
+                    <div class="checklists">
+                        <form action="#">
+                            <div class="fg-pass">
+                                <p class="text-center h-t">please enter the e-mail address used to register a rest link will be sent to you.</p>
+                                <p class="text-center h-t inp_help">e - mail</p>
+                                <div class="input">
+                                    <input type="email" class="inp" value="test@testmail.com" placeholder="email" />
                                 </div>
                             </div>
                         </form>
                     </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                    <a href="#">
-                        <div class="modal-generate">
-                            <!--<span class="previous_text">previous</span>-->
-                            <span>SHARE</span>                          
-                        </div>
-                    </a>
                 </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup17" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-
-                        <div class="heading">
-                            <h3>Share specification</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body mod13">
-                        <form action="#" >
-                            <div class="col-md-6 ">
-                                <div class="bg-image">
-                                    <div class="full">
-                                        <div class="text">
-                                            <p>ARMCHAIR</p>
-                                            <p class="m-b-20">Kimino by Amura</p>
-                                            <p>Project</p>
-                                            <p><strong>MALICON </strong>/ lobby</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="share_group">
-                                    <p class="share">SHARE WITH</p>
-                                    <div class="panel-group" id="faqAccordion2">
-                                        <div class="panel panel-default ">
-                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share4">
-                                                <h4 class="panel-title">
-                                                    <a href="#" class="ing">workgroup</a>
-                                                </h4>
-                                            </div>
-                                            <div id="share4" class="panel-collapse collapse" style="height: 0px;">
-                                                <div class="panel-body">
-                                                    <input class="inp m-b-10" placeholder="name" value="MALICON work group"/>
-                                                    <select class="inp">
-                                                        <option value="">select workgroup</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel panel-default ">
-                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share5">
-                                                <h4 class="panel-title">
-                                                    <a href="#" class="ing">e-mail</a>
-                                                </h4>
-                                            </div>
-                                            <div id="share5" class="panel-collapse collapse" style="height: 0px;">
-                                                <div class="panel-body">
-                                                    <input class="inp m-b-10" placeholder="name"/>
-                                                    <input class="inp" name="" placeholder="email">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                    <a href="#">
-                        <div class="modal-generate">
-                            <!--<span class="previous_text">previous</span>-->
-                            <span>SHARE</span>                          
-                        </div>
-                    </a>
+                <div class="modal-close">
+                    <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
                 </div>
-
+                <a href="#">
+                    <div class="modal-generate">
+                        <span>Submit</span>
+                    </div>
+                </a>
             </div>
-
-
         </div>
-        <div id="popup20" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3><b>Please wait</b><br/>updating projects</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <img class="img-responsive" src="images/spinner.gif" alt=""/>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup21" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3><b>Please wait</b><br/>loading project specifications</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <img class="img-responsive" src="images/spinner.gif" alt=""/>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup22" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3>Your quotation request has been sent</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="full_modal_close">
-                            <button class="close-btn" aria-label="Close" data-dismiss="modal">
-                                <span aria-hidden="true">&times;</span><span>close</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="modal-close success">
-                        <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup23" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3>Inspiration added</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="success-btns">
-                            <button class="btn m-b-20">go to inspiration basket</button>
-                            <button class="btn m-b-20">go back to previous page</button>
-                            <button class="btn m-b-20">go to homepage</button>
-                            <button class="btn m-b-20">close</button>
-                        </div>
-                    </div>
-
-                    <div class="modal-close success">
-                        <img src="images/Pop up supporting-01.png" data-toggle="tooltip" title="Success" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup24" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header processing">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3><strong>MALICON</strong> / lobby<br/>This will remove the project from your project list.<br/>Are you sure you want to permanently delete this project?</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="modal-loader">
-                            <div class="success-btns">
-                                <div class="auto-margin">
-                                    <button class="btn inb">yes</button>                                
-                                    <button class="btn inb ">no</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup25" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3>What is your reason for deleting the project?</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="checklists">
-                            <form action="#">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        the project has been cancelled.
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        handovered, not concerned anymore.
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        I do not work for the concerned project anymore.
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        theKontainer is not relevant to me.
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        too expensive
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                        other reasons
-                                    </label>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <div id="popup26" class="modal fade popups close-btn" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
-
-                        <div class="heading">
-                            <h3>Forgot your password?</h3>
-                        </div>
-                    </div>
-                    <div class="modal-body m-b-10">
-                        <div class="checklists">
-                            <form action="#">
-                                <div class="fg-pass">
-                                    <p class="text-center h-t">please enter the e-mail address used to register a rest link will be sent to you.</p>
-                                    <p class="text-center h-t inp_help">e - mail</p>
-                                    <div class="input">
-                                    <input type="email" class="inp" value="test@testmail.com" placeholder="email"/>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="modal-close">
-                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
-                    </div>
-                    <a href="#">
-                        <div class="modal-generate">
-                            <!--<span class="previous_text">previous</span>-->
-                            <span>Submit</span>                          
-                        </div>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-        </div>
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script>
-            
-        </script>
-    </body>
+    </div>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script></script>
+</body>
 
 </html>
