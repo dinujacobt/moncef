@@ -12,6 +12,9 @@ bg #ebebeb
 green #8bc53e
 text gray #353333*/
 /*general*/
+.popups .modal-dialog{
+    margin: 80px auto;
+}
 .inb{
     display: inline-block;
 }
@@ -403,10 +406,10 @@ span,btn,h3{
 .popups.close-btn .modal-content .modal-close.success{
     position: absolute;
     right: 18px;
-    top: -32px;
+    top: -50px;
 }
 .popups.close-btn .modal-content .modal-close .close-img{
-    max-width: 56px;
+    max-width: 90px;
     opacity: 1;
 }
 .modal-body .success-btns .btn{
@@ -425,13 +428,13 @@ span,btn,h3{
     display: inline-block;
     margin-bottom: 0;
     margin-right: 28px;
-    min-width: 45px;
+    min-width: 74px;
 }
 .modal-body .success-btns .btn.inb:last-child{
     margin-right: 0;
 }
 .modal-body .success-btns .auto-margin{
-    width: 122px;
+    width: 180px;
     margin: auto;
 }
 .mod13 .bg-image{
@@ -495,9 +498,63 @@ span,btn,h3{
     padding: 0 0 10px 0;
 }
 .share_group .panel-body img{
-        width: 36px;
-        padding: 4px;
+    width: 36px;
+    padding: 4px;
 }
 .mod13 .bg-image .full .text p.m-b-20{
     margin-bottom: 20px;
+}
+.full_modal_close{
+    text-align: center;
+}
+.full_modal_close .close-btn,.full_modal_close .close-btn:active,.full_modal_close .close-btn:hover,.full_modal_close .close-btn:focus{
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    outline: none;
+}
+.full_modal_close .close-btn span:first-child{
+    font-size: 42px;
+    padding-right: 10px;
+    line-height: 50px;
+}
+.full_modal_close .close-btn span:nth-child(2){
+
+    font-size: 26px;
+    line-height: 50px;
+}
+.checklists .form-check .form-check-input,.checklists .form-check .form-check-input:focus,.checklists .form-check .form-check-input:active{
+    width: 40px;
+    height: 20px;
+    outline: none;
+}
+.checklists .form-check .form-check-label{
+    font-size: 18px;
+    font-weight: 400;
+}
+.fg-pass{
+    margin-top: 40px;
+}
+.fg-pass .h-t{
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 28px;
+}
+.fg-pass .inp_help{
+    font-size: 18px;
+    margin: 0 auto;
+}
+.fg-pass .input{
+    width: 160px;
+    margin: auto;
+}
+.fg-pass .input .inp{
+    background: #ebebeb;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 160px;
+    border-radius: 25px;
+    text-align: center;
 }
