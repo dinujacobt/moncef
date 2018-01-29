@@ -1,0 +1,242 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 25, 2018, 9:09:36 PM
+    Author     : dinu
+*/
+/*yellow #ffdb03
+bg #ebebeb
+green #8bc53e
+text gray #353333*/
+/*general*/
+.inb{
+    display: inline-block;
+}
+.m-b-10{
+    margin-bottom: 10px;
+}
+.t-r{
+    text-align: right;
+}
+.grey-bg{
+    background: #ebebeb;
+}
+.green-btn{
+    background-color: #8bc53e;
+}
+span,btn,h3{
+   color: #353333; 
+}
+.modal.popups{
+    font-family: 'Dosis', sans-serif;
+}
+.popups .modal-content .modal-header{
+    background: #ebebeb;
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+    position: relative;
+    margin-bottom: 26px;
+}
+.popups .modal-content .modal-body{
+    padding: 4px 8px 8px 8px;
+    overflow: auto;
+}
+.popups .modal-content .modal-header:before{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ebebeb;
+    bottom: -50px;
+    left: calc(50% - 25px);
+    -webkit-clip-path: polygon(100% 0, 75% 12%, 50% 47%, 25% 12%, 0 0);
+    clip-path: polygon(100% 0, 75% 12%, 50% 47%, 25% 12%, 0 0);
+}
+.popups .modal-header .steps{
+    display: block;
+    text-align: center;
+}
+.popups .modal-header .steps ul{
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.popups .modal-header .steps ul li{
+    display: inline-block;
+    position: relative;
+    padding: 0 8px;
+    font-size: 18px;
+    color: #353333;
+}
+.popups .modal-header .steps ul li:after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    bottom: -12px;
+    border-radius: 50%;
+    left: calc(50% - 6px);
+}
+.popups .modal-header .steps ul li.active{
+    color: #000;
+    font-weight: 600;
+}
+.popups .modal-header .steps ul li.active:after{
+    background: #ffdb03;
+}
+.popups.close-btn .modal-content{
+    position: relative;
+}
+.popups.close-btn .modal-content .modal-close{
+    position: absolute;
+    right: 18px;
+    top: -18px;
+}
+.popups.close-btn .modal-content .modal-close .close-img{
+    max-width: 36px;
+    opacity: 1;
+}
+.popups.close-btn .modal-content .modal-prev{
+    position: absolute;
+    left: 18px;
+    bottom: -12px;
+    text-align: center;
+}
+.popups.close-btn .modal-content .modal-prev .icon{
+    background: #ebebeb;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    text-align: center;
+    display: table;
+}
+.popups.close-btn .modal-content .modal-generate{
+    position: absolute;
+    right: 18px;
+    bottom: -36px;
+    width: 80px;
+    height: 80px;
+    background: #ffdb03;
+    display: table;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.popups.close-btn .modal-content .modal-prev .previous_text{
+    color: #353333;
+    text-decoration: none;
+}
+.popups.close-btn .modal-content .modal-prev .icon span,.popups.close-btn .modal-content .modal-generate span{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.popups.close-btn .modal-content .modal-generate span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.popups .modal-content .heading h3{
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.popups .modal-content .image-container .content-img{
+    display: block;
+    max-width: 284px;
+    max-height: 200px;
+    margin: auto;
+}
+.popups .modal-content .nav-btn-container{
+    text-align: center;
+    margin: 8px 0;
+}
+.popups .modal-content .nav-btn-container span{
+    margin: 0 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.popups .modal-content .nav-btn-container .btn,.popups .modal-content .nav-btn-container .btn:active,.popups .modal-content .nav-btn-container .btn:focus{
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0;
+}
+.popups .modal-content .nav-btn-container .btn1{
+    background: #fff;
+}
+.popups .modal-content .image-container.sec-mod{
+    display: inline-block;
+    width: 75%;
+}
+.popups .modal-content .nav-btn-container.sec-mod{
+    width: 20%;
+    float: right;
+    padding-top: 20px;
+    text-align: left;
+}
+.popups .modal-content .nav-btn-container.sec-mod .btn,.popups .modal-content .nav-btn-container.sec-mod span{
+    display: block;
+    margin: 4px 0;
+    min-width: 64px;
+}
+.popups .modal-content .nav-btn-container.sec-mod span{
+    padding-left: 24px;
+}
+.sm-img.inb{
+    display: inline-block!important;
+    max-width: 232px!important;
+}
+.cover-details{
+    margin-bottom: 20px;
+}
+.cover-details .item span{
+    display: block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+.cover-details .item .proprty_val{
+    background: #eaeaea;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.cover-details .item .property_name{
+    font-size: 16px;
+    font-weight: 500;
+}
+.modal-loader img{
+    margin: auto;
+    width: 120px;
+}
+.ab-image{
+    position: relative;
+}
+.ab-image .lg-img{
+    position: absolute;
+    height: 120%;
+    width: 140%;
+    left: -20%;
+    top: -10%;
+}
+.modal-body.ab-image{
+    overflow: initial!important;
+    height: 400px;
+}
+.modal-body.ab-image .col-md-6:first-child .ab-image{
+    height: 400px;
+}
+.modal-body.ab-image h3{
+    line-height: 1.5;
+    font-size: 22px;
+}
+.btn-list .btn{
+        display: block;
+    min-width: 228px;
+}
