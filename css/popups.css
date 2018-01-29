@@ -421,3 +421,17 @@ span,btn,h3{
     background: #fff;
     margin: 0 auto 20px;
 }
+.modal-body .success-btns .btn.inb{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 28px;
+    min-width: 45px;
+}
+.modal-body .success-btns .btn.inb:last-child{
+    margin-right: 0;
+}
+.modal-body .success-btns .auto-margin{
+    width: 122px;
+    margin: auto;
+}
+
