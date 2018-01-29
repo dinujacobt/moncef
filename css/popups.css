@@ -37,7 +37,7 @@ text gray #353333*/
     padding: 0!important;
 }
 span,btn,h3{
-   color: #353333; 
+    color: #353333; 
 }
 .modal.popups{
     font-family: 'Dosis', sans-serif;
@@ -102,10 +102,10 @@ span,btn,h3{
 .popups.close-btn .modal-content .modal-close{
     position: absolute;
     right: 18px;
-    top: -18px;
+    top: -22px;
 }
 .popups.close-btn .modal-content .modal-close .close-img{
-    max-width: 36px;
+    max-width: 48px;
     opacity: 1;
 }
 .popups.close-btn .modal-content .modal-prev{
@@ -133,7 +133,7 @@ span,btn,h3{
     display: table;
     border-radius: 50%;
     text-align: center;
-    
+
 }
 .popups.close-btn .modal-content .modal-prev .previous_text{
     color: #353333;
@@ -142,7 +142,7 @@ span,btn,h3{
 .popups.close-btn .modal-content .modal-prev .icon span,.popups.close-btn .modal-content .modal-generate span{
     display: table-cell;
     vertical-align: middle;
-    
+
 }
 .popups.close-btn .modal-content .modal-generate span{
     font-size: 16px;
@@ -215,7 +215,7 @@ span,btn,h3{
     background: #eaeaea;
     border-radius: 5px;
     font-size: 14px;
-        width: 100%;
+    width: 100%;
     border: none;
     padding: 5px 10px;
     outline: none;
@@ -250,7 +250,7 @@ span,btn,h3{
     font-size: 22px;
 }
 .btn-list .btn{
-        display: block;
+    display: block;
     min-width: 228px;
 }
 .modal-header.processing .heading{
@@ -268,7 +268,7 @@ span,btn,h3{
 }
 .specs div{
     height: 120px;
-        
+
 }
 .specs .item{
     position: relative;
@@ -321,7 +321,7 @@ span,btn,h3{
     display: block;
 }
 .specs .item .input .field,.specs .item .input .field:active,.specs .item .input .field:focus{
-        border: none;
+    border: none;
     background: #ebebeb;
     border-radius: 25px;
     padding: 5px 10px;
@@ -363,7 +363,7 @@ span,btn,h3{
     border-radius: 50%;
 }
 .specs .item .assisatnce .text{
-        width: 30%;
+    width: 30%;
     display: inline-block;
 }
 .specs .item .assisatnce .text p{
@@ -372,7 +372,7 @@ span,btn,h3{
 .specs .item .assisatnce .btn-set button{
     display: inline-block;
     min-width: 30px;
-        border: 1px solid #000;
+    border: 1px solid #000;
     padding: 8px;
     font-size: 16px;
     font-weight: 500;
@@ -399,4 +399,25 @@ span,btn,h3{
 }
 .h424{
     height: 424px!important;
+}
+.popups.close-btn .modal-content .modal-close.success{
+    position: absolute;
+    right: 18px;
+    top: -32px;
+}
+.popups.close-btn .modal-content .modal-close .close-img{
+    max-width: 56px;
+    opacity: 1;
+}
+.modal-body .success-btns .btn{
+    display: block;
+    min-width: 200px;
+    border: 1px solid #000;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background: #fff;
+    margin: 0 auto 20px;
 }
