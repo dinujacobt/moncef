@@ -317,29 +317,71 @@
                             <h3>Specification</h3>
                         </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="image-container sec-mod inb">
-                            <img class="img-responsive content-img" src="images/Pop up supporting-03.png" alt=""/>
-                        </div>
-                        <div class="nav-btn-container inb sec-mod">
-                            <button class="btn btn1">yes</button>
-                            <span class="">or</span>
-                            <button class="btn btn1">no</button>
+                    <div class="modal-body specs-modal">
+                        <div class="specs">
+                            <div class="item">
+                                <div class="prop_num">
+                                    <span class="number">1</span>
+                                    <span class="desc">PRODUCT</span>
+                                </div>
+                                
+                                <div class="input m-r-10-p">
+                                    <label>Quanity</label>
+                                    <input type="text" class="field"/><span class="help-text">Units</span>
+                                </div>
+                                <div class="input ">
+                                    <label>Remarks <span>[ optional ]</span></label>
+                                    <input type="text" class="field l-ip"/>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="prop_num">
+                                    <span class="number">2</span>
+                                    <span class="desc">PROJECT</span>
+                                </div>
+                                
+                                <div class="input ">
+                                    <label>Existing Project</label>
+                                    <select class="field">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                 <div class="or_div">
+                                     <span>or</span>
+                                 </div>
+                                <div class="input ">
+                                    <label>new project</label>
+                                    <input type="text" class="field"/>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="prop_num">
+                                    <span class="number">3</span>
+                                    <span class="desc">SERVICE</span>
+                                </div>
+                                
+                                <div class="assisatnce">
+                                    <div class="image">
+                                        <img src="images/images.jpg" class="img-responsive" alt=""/>
+                                        <span>Paul</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Need urgent assistance from your agent?</p>
+                                    </div>
+                                    <div class="btn-set">
+                                        <button>Yes</button>
+                                        <span>or</span>
+                                        <button>no</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="modal-close">
                         <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
                     </div>
-                    <a href="#">
-                        <div class="modal-prev">
-                            <!--<span class="previous_text">previous</span>-->
-                            <div class="icon" data-toggle="tooltip" title="Previous">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            </div>
-                            
-                        </div>
-                    </a>
+                    
                 </div>
 
             </div>
@@ -350,7 +392,7 @@
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
-                $('#popup4').modal('show');
+                $('#popup7').modal('show');
             });
         </script>
     </body>

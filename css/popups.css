@@ -209,6 +209,7 @@ span,btn,h3{
         width: 100%;
     border: none;
     padding: 5px 10px;
+    outline: none;
 }
 .cover-details .item .property_name{
     font-size: 16px;
@@ -252,4 +253,131 @@ span,btn,h3{
     display: table-cell;
     vertical-align: middle;
     font-size: 28px;
+}
+.specs-modal{
+    height: 414px;
+}
+.specs div{
+    height: 120px;
+        
+}
+.specs .item{
+    position: relative;
+    padding: 10px 0;
+}
+.specs .item:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+    left: 0;
+    bottom: -5px;
+}
+.specs .item:last-child:before{
+    content: none;
+}
+.specs .item .prop_num{
+    height: inherit;
+    width: 20%;
+    display: inline-block;
+    position: relative;
+}
+.specs .item .prop_num span:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    color: #333;
+    font-size: 122px;
+    text-align: center;
+    line-height: 120px;
+    font-weight: 700;
+}
+.specs .item .prop_num span:nth-child(2){
+    text-align: center;
+    line-height: 120px;
+    font-size: 28px;
+    color: #333;
+    opacity: .5;
+}
+.specs .item .input{
+    width: 28%;
+    display: inline-block;
+}
+.specs .item .input label{
+    width: 100%;
+    display: block;
+}
+.specs .item .input .field,.specs .item .input .field:active,.specs .item .input .field:focus{
+        border: none;
+    background: #ebebeb;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 65%;
+    margin-right: 8px;
+    outline: none;
+}
+.specs .item .input label{
+    font-weight: 700;
+}
+.specs .item .input label span{
+    font-weight: 400;
+}
+.m-r-10-p{
+    margin-right: 10%;
+}
+.specs .item .input .field,.specs .item .input .field.l-ip{
+    width: 58%;
+}
+.specs .item .or_div{
+    width: 10%;
+    display: inline-block;
+}
+.specs .item .or_div span{
+    width: 100%;
+    text-align: center;
+}
+.specs .item .assisatnce{
+    width: 79%;
+    display: inline-block;
+}
+.specs .item .assisatnce .image{
+    width: 15%;
+    display: inline-block;
+    float: left;
+}
+.specs .item .assisatnce .image img{
+    border-radius: 50%;
+}
+.specs .item .assisatnce .text{
+        width: 30%;
+    display: inline-block;
+}
+.specs .item .assisatnce .text p{
+    font-weight: 600;
+}
+.specs .item .assisatnce .btn-set button{
+    display: inline-block;
+    min-width: 30px;
+        border: 1px solid #000;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0;
+    background: #fff;
+}
+.specs .item .assisatnce .btn-set{
+    width: 40%;display: inline-block;
+    float: right;
+}
+.specs .item .assisatnce .btn-set button:first-child{
+    margin-right: 10px;
+}
+.specs .item .assisatnce .btn-set span{
+    display: inline-block;
+    margin-right: 10px;
 }
