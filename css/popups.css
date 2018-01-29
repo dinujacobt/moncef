@@ -18,6 +18,9 @@ text gray #353333*/
 .m-b-10{
     margin-bottom: 10px;
 }
+.m-b-20{
+    margin-bottom: 20px;
+}
 .t-r{
     text-align: right;
 }
@@ -26,6 +29,12 @@ text gray #353333*/
 }
 .green-btn{
     background-color: #8bc53e;
+}
+.green-bg{
+    background-color: #8bc53e;
+}
+.no-padding{
+    padding: 0!important;
 }
 span,btn,h3{
    color: #353333; 
@@ -263,7 +272,7 @@ span,btn,h3{
 }
 .specs .item{
     position: relative;
-    padding: 10px 0;
+    padding: 10px 8px;
 }
 .specs .item:before{
     content: "";
@@ -274,7 +283,7 @@ span,btn,h3{
     left: 0;
     bottom: -5px;
 }
-.specs .item:last-child:before{
+.specs .item:last-child:before,.specs .item.green-bg:before{
     content: none;
 }
 .specs .item .prop_num{
@@ -319,6 +328,7 @@ span,btn,h3{
     width: 65%;
     margin-right: 8px;
     outline: none;
+    text-align: center;
 }
 .specs .item .input label{
     font-weight: 700;
@@ -380,4 +390,13 @@ span,btn,h3{
 .specs .item .assisatnce .btn-set span{
     display: inline-block;
     margin-right: 10px;
+}
+.specs .item.green-bg{
+    background: #afd879;
+}
+.modal-body.ab-image.h424 .col-md-6:first-child .ab-image{
+    height: 424px!important;
+}
+.h424{
+    height: 424px!important;
 }
