@@ -202,10 +202,13 @@ span,btn,h3{
     padding: 5px 10px;
     letter-spacing: 1px;
 }
-.cover-details .item .proprty_val{
+.cover-details .item .proprty_val,.cover-details .item .proprty_val:active,.cover-details .item .proprty_val:focus{
     background: #eaeaea;
     border-radius: 5px;
     font-size: 14px;
+        width: 100%;
+    border: none;
+    padding: 5px 10px;
 }
 .cover-details .item .property_name{
     font-size: 16px;
@@ -239,4 +242,14 @@ span,btn,h3{
 .btn-list .btn{
         display: block;
     min-width: 228px;
+}
+.modal-header.processing .heading{
+    height: 272px;
+    display: table;
+    width: 100%;
+}
+.modal-header.processing .heading h3{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 28px;
 }

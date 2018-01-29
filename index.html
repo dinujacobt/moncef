@@ -184,19 +184,24 @@
                         </div>
                     </div>
                     <div class="modal-body">
+                        <form action="#" >
                         <div class="col-md-6">
                             <div class="cover-details">
                                 <div class="item m-b-10">
                                     <span class="property_name">complete project name</span>
-                                    <span class="proprty_val">Malicon Project</span>
+                                    <input type="text" class="proprty_val" placeholder="Malicon Project"/>
+                                    
                                 </div>
                                 <div class="item m-b-10">
                                     <span class="property_name">project typology</span>
-                                    <span class="proprty_val">Hotel</span>
+                                    <select class="proprty_val">
+                                        <option value="" selected="">Hotel</option>
+                                        <option value="">Hotel1</option>
+                                    </select>
                                 </div>
                                 <div class="item m-b-10">
                                     <span class="property_name">client name</span>
-                                    <span class="proprty_val">Meeras</span>
+                                    <input type="text" class="proprty_val" placeholder="Meeras"/>
                                 </div>
                                 
                             </div>
@@ -205,12 +210,13 @@
                             <div class="cover-details">
                                 <div class="item">
                                     <span class="property_name">project location</span>
-                                    <span class="proprty_val m-b-10">United Arab Emirates</span>
-                                    <span class="proprty_val m-b-10">Dubai</span>
-                                    <span class="proprty_val m-b-10">Area quarter</span>  
+                                    <input type="text" class="proprty_val m-b-10" placeholder="Location"/>
+                                    <input type="text" class="proprty_val m-b-10" placeholder="country"/>
+                                    <input type="text" class="proprty_val" placeholder="area"/>
                                 </div>    
                             </div>
                         </div>
+                        </form>
                     </div>
 
                     <div class="modal-close">
@@ -241,7 +247,7 @@
 
                 <!-- Modal content-->
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div class="modal-header processing">
                         <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
                        
                         <div class="heading">
@@ -300,11 +306,51 @@
 
 
         </div>
+        <div id="popup7" class="modal fade popups close-btn" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        
+                        <div class="heading">
+                            <h3>Specification</h3>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="image-container sec-mod inb">
+                            <img class="img-responsive content-img" src="images/Pop up supporting-03.png" alt=""/>
+                        </div>
+                        <div class="nav-btn-container inb sec-mod">
+                            <button class="btn btn1">yes</button>
+                            <span class="">or</span>
+                            <button class="btn btn1">no</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-close">
+                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
+                    </div>
+                    <a href="#">
+                        <div class="modal-prev">
+                            <!--<span class="previous_text">previous</span>-->
+                            <div class="icon" data-toggle="tooltip" title="Previous">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            </div>
+                            
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
-                $('#popup6').modal('show');
+                $('#popup4').modal('show');
             });
         </script>
     </body>
