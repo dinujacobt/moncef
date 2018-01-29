@@ -22,6 +22,7 @@
         <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup10">Open Modal 10</button>
         <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup11">Open Modal 11</button>
         <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup12">Open Modal 12</button>
+        <button type="button" class="btn btn-info btn-lg inb" data-toggle="modal" data-target="#popup13">Open Modal 13 - 16</button>
         <!-- Modal -->
         <div id="popup1" class="modal fade popups close-btn" role="dialog">
             <div class="modal-dialog">
@@ -585,8 +586,8 @@
                         <div class="modal-loader">
                             <div class="success-btns">
                                 <div class="auto-margin">
-                                <button class="btn inb">yes</button>                                
-                                <button class="btn inb ">no</button>
+                                    <button class="btn inb">yes</button>                                
+                                    <button class="btn inb ">no</button>
                                 </div>
                             </div>
                         </div>
@@ -602,11 +603,102 @@
 
 
         </div>
+        <div id="popup13" class="modal fade popups close-btn" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="heading">
+                            <h3>Share product</h3>
+                        </div>
+                    </div>
+                    <div class="modal-body mod13">
+                        <form action="#" >
+                            <div class="col-md-6 ">
+                                <div class="bg-image">
+                                    <div class="full">
+                                        <div class="text">
+                                            <p><strong>Kimino</strong></p>
+                                            <p>by Amura</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="share_group">
+                                    <p class="share">SHARE WITH</p>
+                                    <div class="panel-group" id="faqAccordion">
+                                        <div class="panel panel-default ">
+                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share1">
+                                                <h4 class="panel-title">
+                                                    <a href="#" class="ing">workgroup</a>
+                                                </h4>
+                                            </div>
+                                            <div id="share1" class="panel-collapse collapse" style="height: 0px;">
+                                                <div class="panel-body">
+                                                    <select class="inp">
+                                                        <option value="">select workgroup</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default ">
+                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share2">
+                                                <h4 class="panel-title">
+                                                    <a href="#" class="ing">e-mail</a>
+                                                </h4>
+                                            </div>
+                                            <div id="share2" class="panel-collapse collapse" style="height: 0px;">
+                                                <div class="panel-body">
+                                                    <input class="inp m-b-10" placeholder="name"/>
+                                                    <input class="inp" name="" placeholder="email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default ">
+                                            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#share3">
+                                                <h4 class="panel-title">
+                                                    <a href="#" class="ing">social network</a>
+                                                </h4>
+                                            </div>
+                                            <div id="share3" class="panel-collapse collapse" style="height: 0px;">
+                                                <div class="panel-body">
+                                                    <a class="inb" data-toggle="tooltip" title="facebbok" href="#"><img class="img-responsive" src="images/fb.png" alt=""/></a>
+                                                    <a class="inb" data-toggle="tooltip" title="instagram" href="#"><img class="img-responsive" src="images/insta.png" alt=""/></a>
+                                                    <a class="inb" data-toggle="tooltip" title="pintrest" href="#"><img class="img-responsive" src="images/pinterest.png" alt=""/></a>
+                                                    <a class="inb" data-toggle="tooltip" title="Linkedin" href="#"><img class="img-responsive" src="images/in.png" alt=""/></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-close">
+                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt=""/>
+                    </div>
+
+                    <a href="#">
+                        <div class="modal-generate">
+                            <!--<span class="previous_text">previous</span>-->
+                            <span>SHARE</span>                          
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function () {
-                $('#popup12').modal('show');
+                $('#popup13').modal('show');
             });
         </script>
     </body>
