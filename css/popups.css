@@ -620,11 +620,10 @@ span,btn,h3{
     margin-top: 100px;
 }
 .common_struct1{
-    background: #ececec;
+    background: #f4f4f4;
     padding: 40px 10px 10px 10px;
     text-align: center;
     position: relative;
-
     min-height: 190px;
 }
 .common_struct1 .head{
@@ -696,20 +695,21 @@ span,btn,h3{
     margin-top: 28px;
     font-size: 25px;
     display: table;
-    
     position:relative;
 }
-
+.scroll_down a{
+    text-decoration: none;
+}
 .scroll_down .navigation span{
     display: table-cell;
     vertical-align: middle;
     font-weight: 300;
+    text-align: center;
+    transition: all .2s ease;
+    -webkit-transform: all .2s ease;
+    -moz-transition: all .2s ease;
+}
+.scroll_down .navigation:hover span{
+    transform: scale(1.4);
 }
 
-.scroll_down .navigation a{
-    text-decoration: none;
-    margin: auto;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
