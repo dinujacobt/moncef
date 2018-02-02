@@ -24,6 +24,9 @@ text gray #353333*/
 .m-b-20{
     margin-bottom: 20px;
 }
+.m-t-20{
+    margin-top: 20px;
+}
 .m-b-50{
     margin-bottom: 50px;
 }
@@ -713,3 +716,178 @@ span,btn,h3{
     transform: scale(1.4);
 }
 
+/*page 2 strats*/
+.pg2-container{
+    margin-top: 20px;
+}
+.pg2 .large_img .lg-im{
+    -webkit-box-shadow: 2px 3px 12px 2px rgba(194,194,194,1);
+    -moz-box-shadow: 2px 3px 12px 2px rgba(194,194,194,1);
+    box-shadow: 2px 3px 12px 2px rgba(194,194,194,1);
+    width: 80%;
+    margin: auto;
+}
+.pg2 .small_img{
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+}
+.pg2 .small_img .sm-im{
+    width: 140px;
+    display: inline-block;
+    padding-right: 24px;
+}
+.pg2 .small_img .sm-im:last-child{
+    padding: 0;
+}
+.chat_btns.pg2{
+    background: url('../images/product/bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 78px;
+}
+.chat_btns.pg2 .full-c{
+    width: 92%;
+    height: 65%;
+    left: 4%;
+    top: 9%;
+}
+.chat_btns.pg2 .content .img{
+    max-width: 28px;
+}
+.chat_btns.pg2 .content4{
+    width: 22%;
+    height: 100%;
+    padding: 4px;
+}
+.chat_btns .content.active{
+    background: #f7d400
+}
+.pg2 .middle_btn{
+    margin: 20px 0;
+}
+.pg2 .middle_btn .btn{
+    background: #ededed;
+    padding: 2px 6px;
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    display: table;
+    margin: auto;
+}
+.common_struct1 .content .left_spec{
+    width: 50%;
+    float: left;
+    padding-right: 4px;
+    text-align: right;
+}
+.common_struct1 .content .left_spec span{
+    color: #ababab;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.common_struct1 .content .righ_spec{
+    width: 50%;
+    float: right;
+    padding-left: 4px;
+    text-align: left;
+}
+.common_struct1 .content .righ_spec span{
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: block;
+    color: #000;
+}
+.common_struct1 .content .row{
+    max-width: 100%;
+    margin: auto;
+}
+.common_struct1.no-min{
+    min-height: initial;
+}
+.common_struct1.no-head{
+    padding: 10px;
+}
+.common_struct1 .extra_dt{
+    position: absolute;
+    right: -150px;
+    width: 145px;
+    bottom: 15px;
+    font-size: 10px;
+    text-align: left;
+}
+.common_struct1 .extra_dt span{
+    display: block;
+}
+.alternatives_div{
+    margin-top: 32px;
+}
+.alternatives_div .col-md-6{
+    min-height: 120px;
+    position: relative;
+}
+.alternatives_div .alternatives{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 10px;
+}
+.alternatives_div .scroll_down .alternative_text{
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #000;
+}
+.alternatives_div .navigation{
+    height: 34px;
+    margin: 0 auto;
+}
+
+.alternatives_div .collection .collection_text{
+    text-align: center;
+    margin: 0;
+}
+.alternatives_div .collection .coll_p{
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+.alternatives_div .collection .coll_p .item{
+    width: 24%;
+    display: inline-block;
+    padding-right: 4px;
+}
+.alternatives_div .collection .coll_p .item p{
+    margin: 0;
+    text-align: center;
+    font-size: 9px;
+}
+.alternatives_div .collection .coll_p .img{
+    max-width: 80%;
+    margin: auto;
+}
+.pg2-container .product_suggestion .item{
+    width: 19%;
+    display: inline-block;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+.pg2-container .product_suggestion .item p{
+    margin: 0;
+}
+.pg2-container .product_suggestion{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.pg2-container .product_suggestion .img{
+    width: 150px;
+    height: 84px;
+    margin: auto;
+}
