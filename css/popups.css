@@ -24,6 +24,12 @@ text gray #353333*/
 .m-b-20{
     margin-bottom: 20px;
 }
+.m-b-50{
+    margin-bottom: 50px;
+}
+.m-r-10{
+    margin-right: 10px;
+}
 .t-r{
     text-align: right;
 }
@@ -556,5 +562,154 @@ span,btn,h3{
     padding: 5px 10px;
     width: 160px;
     border-radius: 25px;
+    text-align: center;
+}
+
+/*mission 2 starts*/
+
+.specifications .image_div{
+    display: block;
+    position: relative;
+}
+.specifications .image_div img{
+    max-height: 470px;
+    margin: auto;
+}
+.chat_btns{
+    width: 180px;
+    height: 100px;
+    margin: auto;
+    background: url('../images/spec/KK Lead page supporting-02.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.chat_btns .full-c{
+    position: absolute;
+    width: 80%;
+    height: 57%;
+    left: 10%;
+    top: 14%;
+    overflow: hidden;
+}
+.chat_btns .full-c .content.content2{
+    width: 40%;
+}
+.chat_btns .full-c .content{
+    display: inline-block;
+    text-align: center;
+}
+.chat_btns .content:first-child{
+    margin-right: 4%;
+}
+.chat_btns .content .img{
+    max-width: 60%;
+    display: block;
+    margin: auto;
+}
+.chat_btns a{
+    text-decoration: none;
+}
+.chat_btns .content .desc{
+    text-decoration: none;
+    color: #333;
+    font-size: 10px;
+    margin: 0;
+}
+.specs_deatils{
+    margin-top: 100px;
+}
+.common_struct1{
+    background: #ececec;
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+
+    min-height: 190px;
+}
+.common_struct1 .head{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    background: #dcdcdc;
+    display: table;
+}
+.common_struct1 .head_p{
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.common_struct1 .content .quantity{
+    padding-left: 8px;
+    font-size: 16px;
+}
+.content p .spec{
+    color: #a4a4a4;
+}
+.common_struct1 .content .content_head{
+    font-size: 16px;
+    font-weight: 600;
+}
+.common_struct1 .content .quantity .unit,.common_struct1 .content .spec_word{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.common_struct2{
+    position: relative;
+    border: 1px solid;
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+    min-width: 56px;
+}
+.common_struct2 .number{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin: 4px 0;
+}
+.common_struct2 .footer{
+    padding: 2px 4px;
+    background: #d0d0d0;
+}
+.common_struct2 .footer .footer_text{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: .6px;
+    color: #000;
+    font-weight: 600;
+}
+.scroll_down .navigation{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 28px;
+    font-size: 25px;
+    display: table;
+    
+    position:relative;
+}
+
+.scroll_down .navigation span{
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.scroll_down .navigation a{
+    text-decoration: none;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
     text-align: center;
 }
