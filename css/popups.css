@@ -767,13 +767,15 @@ span,btn,h3{
 .pg2 .middle_btn{
     margin: 20px 0;
 }
-.pg2 .middle_btn .btn{
+.pg2 .middle_btn .btn,.pg2 .middle_btn .btn:active,.pg2 .middle_btn .btn:focus{
     background: #ededed;
-    padding: 2px 6px;
+    padding: 2px 10px;
     border: 1px solid #cbcbcb;
-    border-radius: 6px;
+    border-radius: 25px;
     display: table;
     margin: auto;
+    font-weight: 600;
+    outline: none;
 }
 .common_struct1 .content .left_spec{
     width: 50%;
@@ -890,4 +892,91 @@ span,btn,h3{
     width: 150px;
     height: 84px;
     margin: auto;
+}
+
+
+
+/*page3*/
+.pg3_full_c{
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+}
+.pg3_full_c .col-md-5{
+}
+.pg3_full_c .brand_container{
+    text-align: center;
+}
+.pg3_full_c .brand_container .brand_logo .img{
+    max-width: 196px;
+    margin: auto;    
+}
+.pg3_full_c .brand_container .brand_name{
+    margin-top: 20px;
+}
+.pg3_full_c .brand_container .brand_name .name{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.pg3_full_c .brand_container .brand_name .place{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+}
+.pg3_full_c .brand_desc{
+    padding: 16px;
+    display: block;
+    float: left;
+    width: 100%;
+    background: #f4f4f4;
+    position: relative;
+}
+.pg3_full_c .brand_desc .catalog_img{
+    max-width: 74px;
+    margin: auto;
+}
+.pg3_full_c .brand_desc a{
+    text-decoration: none;
+}
+.pg3_full_c .brand_desc .visit,.pg3_full_c .brand_desc .v_c{
+    font-size: 10px;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+}
+.pg3_full_c .middle_div{
+    transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
+.pg3_full_c .common_struct2{
+        position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    width: 56px;
+    margin: auto;
+}
+.pg3_full_c .brand_desc .images_div{
+    padding-top: 16px;
+}
+.pg3_full_c .brand_desc .images_div .o_b{
+    padding-bottom: 10px;
+    max-height: 120px;
+    max-width: 90%;
+    margin: auto;
+}
+.pg3_full_c .brand_desc .images_div .o_b:last-child{
+    padding-bottom: 0;
+}
+.pg3_full_c .brand_desc .top3{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4px;
 }
