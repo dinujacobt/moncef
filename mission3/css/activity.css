@@ -20,37 +20,46 @@ and open the template in the editor.
 }
 .activity_struct_1{
     background: #f4f4f4;
-    padding: 20px 100px;
+    padding: 20px 36px;
     border-radius: 20px;
     display: block;
-    width: 80%;
+    width: 436px;
     margin-left: 20%;
     position: relative;
     text-align: center;
+    margin-bottom: 20px;
+}
+.row .activity_struct_1:last-child{
+    margin-bottom: 0;
 }
 .activity_struct_1 .abs_content{
     position: absolute;
     width: 196px;
-    height: 50%;
-    top: 25%;
-    left: -120px;
-    display: table;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -150px;
+    display: block;
+    
 }
 .activity_struct_1 .abs_content .name{    
-    display: table-cell;
-    vertical-align: middle; 
-    width: 50%;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    float: left;
 }
 .activity_struct_1 .abs_content .name p{
     margin: 0;
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 1px;
+    line-height: 60px;
 }
 .activity_struct_1 .abs_content .image{
-    display: table-cell;
-    vertical-align: middle;
-    width: 50%;
+    display: inline-block;
+    width: 70px;
+    max-height: 60px;
 }
 .activity_struct_1 .abs_content .image .img{
     width: 60px;
