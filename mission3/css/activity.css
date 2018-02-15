@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 15, 2018, 9:23:32 PM
+    Author     : dinu
+*/
+
+.activity_body{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', sans-serif!important;
+}
+.activity_body .content{
+    padding: 80px 0;
+}
+.activity_struct_1{
+    background: #f4f4f4;
+    padding: 20px 100px;
+    border-radius: 20px;
+    display: block;
+    width: 80%;
+    margin-left: 20%;
+    position: relative;
+    text-align: center;
+}
+.activity_struct_1 .abs_content{
+    position: absolute;
+    width: 196px;
+    height: 50%;
+    top: 25%;
+    left: -120px;
+    display: table;
+}
+.activity_struct_1 .abs_content .name{    
+    display: table-cell;
+    vertical-align: middle; 
+    width: 50%;
+}
+.activity_struct_1 .abs_content .name p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.activity_struct_1 .abs_content .image{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.activity_struct_1 .abs_content .image .img{
+    width: 60px;
+}
+.activity_struct_2{
+    display: inline-block;
+    margin: 0 20px;
+}
+.activity_struct_2 .number{
+    border: 1px solid #000;
+    padding: 8px;
+    width: 52px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.activity_struct_2 .number p{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.activity_struct_2 .bottom_text{
+    font-size: 11px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
