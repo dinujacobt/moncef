@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 15, 2018, 9:23:32 PM
+    Author     : dinu
+*/
+
+.activity_body{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'Dosis', sans-serif!important;
+}
+.activity_body .content{
+    padding: 80px 0;
+}
+.activity_struct_1{
+    background: #f4f4f4;
+    padding: 20px 36px;
+    border-radius: 20px;
+    display: block;
+    width: 436px;
+    margin-left: 20%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.row .activity_struct_1:last-child{
+    margin-bottom: 0;
+}
+.activity_struct_1 .abs_content{
+    position: absolute;
+    width: 196px;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -150px;
+    display: block;
+
+}
+.activity_struct_1 .abs_content .name{    
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    float: left;
+}
+.activity_struct_1 .abs_content .name p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+.activity_struct_1 .abs_content .image{
+    display: inline-block;
+    width: 70px;
+    max-height: 60px;
+}
+.activity_struct_1 .abs_content .image .img{
+    width: 60px;
+}
+.activity_struct_2{
+    display: inline-block;
+    margin: 0 20px;
+}
+.activity_struct_2 .number{
+    border: 1px solid #000;
+    padding: 8px;
+    width: 52px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.activity_struct_2 .number p{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.activity_struct_2 .bottom_text{
+    font-size: 11px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.activity_struct_1.type2{
+    width: 390px;
+    padding: 10px 36px;
+    margin-left: 46px;
+}
+.activity_struct_1.type2 .item {
+    margin-bottom: 10px;
+}
+.activity_struct_1.type2 .item .number{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+.activity_struct_1.type2 .item  .exp{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1.1;
+}
+.activity_struct_3{
+    background: #f7f0c1;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 136px;
+    position: relative;
+}
+.activity_struct_3 .item{
+    width: 16%;
+    display: inline-block;
+    text-align: center;
+}
+.activity_struct_3 .item .number{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+.activity_struct_3 .item .exp{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    line-height: 1.1;
+}
+.activity_struct_3 .abs_content{
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    border-radius: 20px;
+    top: -30px;
+    background: #f7d400;
+    z-index: -1;
+}
+.activity_struct_3 .about{
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.activity_struct_3 .about .light{
+    font-weight: 300;
+}
+.activity_struct_3 .about .str{
+    font-weight: 600;
+}
