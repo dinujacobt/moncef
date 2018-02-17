@@ -239,6 +239,7 @@ and open the template in the editor.
 }
 .activity_body .btn_set .btns{
     text-align: center;
+
 }
 .activity_body .btn_set .btns .btn,.activity_body .btn_set .btns .btn:active,.activity_body .btn_set .btns .btn:focus{
     background: #fff;
@@ -248,8 +249,117 @@ and open the template in the editor.
     min-width: 122px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-right: 12px;
+    margin-right: 24px;
     outline: none;
     color: #1b1860;
+}
+.activity_body .btn_set .btns .btn:last-child{
+    margin-right: 0;
+}
 
+.activity_body .activity_struct_4{
+    padding: 40px 10px 10px 10px;
+    text-align: center;
+    position: relative;
+    min-height: 190px;
+    background: transparent;
+    padding-top: 0;
+}
+.activity_struct_4 .user_img .img{
+    max-width: 120px;
+    margin: auto;
+    display: block;
+}
+.activity_struct_4 .content{
+    padding: 0;
+}
+.activity_struct_4 .user-name{
+    text-align: center;
+}
+.activity_struct_4 .user-name p{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.activity_struct_4 .user-name span{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.activity_struct_4 .content .row {
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 4px;
+}
+.activity_struct_4 .content .left_spec {
+    width: 50%;
+    float: left;
+    padding-right: 4px;
+    text-align: right;
+}
+.activity_struct_4 .content .left_spec span {
+    color: #a2a2a1;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.activity_struct_4 .content .righ_spec {
+    width: 50%;
+    float: right;
+    padding-left: 4px;
+    text-align: left;
+}
+.activity_struct_4 .content .righ_spec span {
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: block;
+    color: #4d4d52;
+    font-size: 15px;
+    padding-left: 6px;
+}
+.activity_struct_4 .content .righ_spec a {
+    color: #4d4d52;
+    text-decoration: none;
+}
+.activity_struct_4 .user_links{
+    margin-bottom: 20px;
+}
+.activity_struct_4 .user_links .item{
+    display: inline-block;
+    margin-right: 24px;
+    text-align: center;
+}
+.activity_struct_4 .user_links .item:last-child{
+    margin-right: 0;
+}
+.activity_struct_4 .user_links .item .img{
+    width: 20px;
+}
+.activity_struct_4 .user_links .item p{
+    font-size: 8px;
+    margin-bottom: 0;
+}
+.activity_struct_4_bottom .bottom{
+    margin-top: 28px;
+}
+.activity_struct_4_bottom .bottom .activity_struct_2 .bottom_text{
+    font-size: 14px;
+}
+.activity_struct_4_bottom .bottom .struct_container{
+    padding: 12px 0px;
+    display: inline-block;
+}
+.activity_struct_4_bottom .bottom .struct_container.active{
+    background: #f4db43;
+}
+.activity_struct_4_bottom .bottom .struct_container .activity_struct_2 .number{
+    width: 44px;
+}
+.activity_struct_4_bottom{
+        text-align: center;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.activity_struct_4_bottom .activity_struct_2{
+    margin: 0 10px;
 }
