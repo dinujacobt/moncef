@@ -15,6 +15,29 @@ and open the template in the editor.
     padding: 20px 8px;
     font-family: Dosis san-serif;
 }
+.left_middle .search_div{
+    position: relative;
+}
+.left_middle .search_div .custom_holder{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+}
+.left_middle .search_div .custom_holder .large{    
+     font-size: 20px; 
+     color: #000;
+     font-weight: 700; 
+}
+.left_middle .search_div .custom_holder .small{
+    font-size: 12px;
+    padding-left: 6px;
+    color: #a1a1a1;
+    font-weight: 300;
+}
 .left_middle .search_div .search,.left_middle .search_div .search:focus,.left_middle .search_div .search:active,.left_middle .search_div .search:hover{
     width: 90%;
     border: none;
@@ -22,7 +45,7 @@ and open the template in the editor.
     font-size: 16px;
     letter-spacing: 1px;
 }
-.left_middle .search_div .search::-webkit-input-placeholder { font-size: 20px; color: #000;font-weight: 700; }
+.left_middle .search_div .search::-webkit-input-placeholder {}
 .left_middle .search_div .search::-moz-placeholder { font-size: 20px; color: #000;font-weight: 700; }
 .left_middle .search_div .search:-ms-input-placeholder { font-size: 20px; color: #000;font-weight: 700; }
 .left_middle .search_div .search:-moz-placeholder { font-size: 20px; color: #000;font-weight: 700; }
@@ -43,7 +66,7 @@ and open the template in the editor.
     padding-right: 4px;
 }
 .filter_accordion .filter_heading{
-    padding: 4px;
+    padding: 0 4px;
     border-radius: 5px;
     background: #e6e7e9;
     color: #000;
@@ -52,21 +75,90 @@ and open the template in the editor.
     outline: none;
     position: relative;
 }
-.filter_accordion .filter_heading:after{
-    position: absolute;
-    content: "\f054";
-    font-family: FontAwesome;
+.filter_accordion .filter_heading .ing:after{
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e114";
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     text-decoration: inherit;
-/*--adjust as necessary--*/
     color: #8f9092;
-    font-size: 12px;
-    padding-right: 0.5em;
-    top: 4px;
-    line-height: 100%;
-    right: 4px;
+    font-size: 10px;
+    padding-top: 4px;
+    float: right;
 }
-.filter_accordion .filter_heading a{
+.filter_accordion .filter_heading.collapsed .ing:after{
+    content: "\e080";
+}
+.filter_accordion .filter_heading .ing{
     text-decoration: none;
+    font-size: 14px;
+}
+.filter_accordion .custom_panel:first-child{
+    margin-top: 36px;
+}
+.filter_accordion .custom_panel{
+    margin-bottom: 36px;
+    border: none;
+    box-shadow: none!important;
+}
+.filter_accordion .custom_panel:last-child{
+    margin-bottom: 0;
+}
+.filter_accordion .panel-body{
+    border: none!important;
+    border-top: none!important;
+    border-bottom: none!important;
+}
+.filter_accordion .level_1 .panel-body{
+    padding: 12px 6px;
+}
+
+/*level 2 filter*/
+
+
+.filter_accordion .level2 .accordion-toggle{
+    width: 100%;
+    display: block;
+    color: #6b6b6b;
+    text-decoration: none;
+    font-size: 14px;
+}
+.filter_accordion .level2 .accordion-body{
+    padding-left: 8px;
+}
+
+/*level 3 filter*/
+
+
+.filter_accordion .level3 .accordion-toggle{
+    font-weight: 700;
+}
+.filter_accordion .level3 .accordion-toggle:after{
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e114";
+    font-style: normal;
+    font-weight: 300;
+    text-decoration: inherit;
+    color: #8f9092;
+    font-size: 10px;
+    padding-top: 4px;
+    float: right;
+}
+.filter_accordion .level3 .collapsed.accordion-toggle:after{
+    content: "\e080";
+}
+
+
+/*checkbox list*/
+.filter_accordion .level3 .filter_check_box_list{
+    margin-left: -16px;
+}
+.filter_check_box_list .item input + label{
+    font-weight: 300;
+}
+.filter_check_box_list input[type=checkbox]:checked + label{
+    font-weight: 700;
+}
+.filter_check_box_list input[type=checkbox]{
+    margin: 0 8px 0 0; 
 }
