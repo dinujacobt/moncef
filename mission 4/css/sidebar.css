@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 22, 2018, 5:26:03 PM
+    Author     : 4875
+*/
+.left_middle{
+    display: inline-block;
+    width: 220px;
+    border: 1px solid;
+    height: auto;
+    padding: 20px 8px;
+    font-family: Dosis san-serif;
+}
+.left_middle .search_div .search,.left_middle .search_div .search:focus,.left_middle .search_div .search:active,.left_middle .search_div .search:hover{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.left_middle .search_div .search::-webkit-input-placeholder { font-size: 20px; color: #000;font-weight: 700; }
+.left_middle .search_div .search::-moz-placeholder { font-size: 20px; color: #000;font-weight: 700; }
+.left_middle .search_div .search:-ms-input-placeholder { font-size: 20px; color: #000;font-weight: 700; }
+.left_middle .search_div .search:-moz-placeholder { font-size: 20px; color: #000;font-weight: 700; }
+.left_middle .filter_by_div{
+    margin-top: 20px;
+}
+.left_middle .filter_by_div .text{
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.left_middle .filter_by_div .filter_img{
+    display: inline-block;
+    width: 24px;
+    padding-right: 4px;
+}
+.filter_accordion .filter_heading{
+    padding: 4px;
+    border-radius: 5px;
+    background: #e6e7e9;
+    color: #000;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+}
+.filter_accordion .filter_heading:after{
+    position: absolute;
+    content: "\f054";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #8f9092;
+    font-size: 12px;
+    padding-right: 0.5em;
+    top: 4px;
+    line-height: 100%;
+    right: 4px;
+}
+.filter_accordion .filter_heading a{
+    text-decoration: none;
+}
