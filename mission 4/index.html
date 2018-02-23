@@ -242,7 +242,32 @@
                             </div>
                             <div id="filter1" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-
+                                    <div class="filter_check_box_list">
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Antique"> 
+                                            <label>Antique</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Contemporary"> 
+                                            <label>Contemporary</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Classic"> 
+                                            <label>Classic</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Industrial"> 
+                                            <label>Industrial</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Modern"> 
+                                            <label>Modern</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="style" value="Rustic"> 
+                                            <label>Rustic</label>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +280,40 @@
                             </div>
                             <div id="filter2" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-
+                                    <div class="filter_check_box_list">
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Fabric"> 
+                                            <label>Fabric</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Metal"> 
+                                            <label>Metal</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Glass"> 
+                                            <label>Glass</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Stone"> 
+                                            <label>Stone</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Wood"> 
+                                            <label>Wood</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Cement based"> 
+                                            <label>Cement based</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Plastic"> 
+                                            <label>Plastic</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Material" value="Composit Material"> 
+                                            <label>Composit Material</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +326,20 @@
                             </div>
                             <div id="filter3" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-
+                                    <div class="filter_check_box_list">
+                                        <div class="item">
+                                            <input type="checkbox" name="Price" value="l_m"> 
+                                            <label>Low - Medium</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Price" value="m_t"> 
+                                            <label>Medium - High</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Price" value="no"> 
+                                            <label>No Budget</label>
+                                        </div>                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +365,29 @@
                             </div>
                             <div id="filter5" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-
+                                    <div class="filter_check_box_list">
+                                        <p class="disclaimer"><span>*</span>production lead time only</p>
+                                        <div class="item">
+                                            <input type="checkbox" name="Time" value="15"> 
+                                            <label>>15 days</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Time" value="30"> 
+                                            <label>>30 days</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Time" value="45"> 
+                                            <label>>45 days</label>
+                                        </div>    
+                                        <div class="item">
+                                            <input type="checkbox" name="Time" value="60"> 
+                                            <label>>60 days</label>
+                                        </div>
+                                        <div class="item">
+                                            <input type="checkbox" name="Time" value="90"> 
+                                            <label>>90 days</label>
+                                        </div>    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +400,23 @@
                             </div>
                             <div id="filter6" class="panel-collapse collapse" style="height: 0px;">
                                 <div class="panel-body">
-
+                                    <div class="country_search">
+                                        <input type="hidden" name="country" id="user_selected_country">
+                                        <div class="search_div">
+                                            <input type="text" id="search_country" name="search_country">
+                                        </div>
+                                        <div class="country_list_search">
+                                            <div class="item">
+                                                <p>Australia</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Belgium</p>
+                                            </div>
+                                            <div class="item">
+                                                <p>Bulgeria</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +453,37 @@
                     } else {
                         $(this).parent(".custom_panel").css('margin-bottom', '36px');
                     }
+                });
 
+//                make jquery contain case insensitive
+                // New selector
+                jQuery.expr[':'].Contains = function (a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+
+// Overwrites old selecor
+
+                jQuery.expr[':'].contains = function (a, i, m) {
+                    return jQuery(a).text().toUpperCase()
+                            .indexOf(m[3].toUpperCase()) >= 0;
+                };
+                // search in country 
+                $('#search_country').keyup(function () {
+                    var search = $(this).val();
+                    $('.country_list_search .item').hide();
+                    $('.country_list_search .item:contains("' + search + '")').show();
+                });
+                //mark country selecttion
+                $('.country_search .country_list_search .item').click(function(){
+                    $('.country_search .country_list_search .item').not(this).removeClass('selected');
+                    $(this).toggleClass('selected');
+                    if($(this).hasClass('selected')){
+                        var country = $(this).children('p').text();
+                        $('#user_selected_country').val(country);
+                    }else{
+                        $('#user_selected_country').val('');
+                    }
                 });
             });
         </script>

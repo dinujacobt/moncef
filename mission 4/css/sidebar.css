@@ -153,6 +153,9 @@ and open the template in the editor.
 .filter_accordion .level3 .filter_check_box_list{
     margin-left: -16px;
 }
+.filter_check_box_list p,.filter_check_box_list input,.filter_check_box_list .item input + label{
+    color: #666666;
+}
 .filter_check_box_list .item input + label{
     font-weight: 300;
 }
@@ -161,4 +164,42 @@ and open the template in the editor.
 }
 .filter_check_box_list input[type=checkbox]{
     margin: 0 8px 0 0; 
+}
+.filter_check_box_list .disclaimer{
+    color: #747474;
+    font-size: 11px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.filter_check_box_list .disclaimer span{
+    vertical-align: super;
+    font-size: 8px;
+}
+.country_search .item p{
+    color: #666666;
+}
+.country_search .search_div{
+    margin-bottom: 10px;
+}
+.country_search .search_div input{
+    background-image: url(../images/search_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 6px;
+    padding-left: 29px;
+    max-width: 100%;
+    box-shadow: none;
+    border: 1px solid #818181;
+    border-radius: 8px;
+}
+.country_search .search_div input:focus,.country_search .search_div input:active,.country_search .search_div input:hover{
+    outline: none;
+}
+.country_search .country_list_search .item{
+    cursor: pointer;
+    
+}
+.country_search .country_list_search .item.selected p:after{
+    content: " \2713";
 }
