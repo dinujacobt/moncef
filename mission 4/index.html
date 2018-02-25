@@ -10,8 +10,11 @@
 
     <body>
         <div class="container">
+
             <div class="left_middle">
+
                 <form id="filter_form" role="form" action="#">
+
                     <div class="search_div">
                         <span class="custom_holder"><span class="large">SEARCH </span><span class="small">product,category,style,material,price level</span></span>
                         <input type="text" class="search" name="product_name"> 
@@ -19,6 +22,148 @@
                     <div class="filter_by_div">
                         <img class="filter_img" src="images/fiter_icon.jpg" alt=""/>
                         <p class="text">FILTER BY</p>                        
+                    </div>
+                    <div class="color_picker">
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/White.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div white">                                            
+                                            <p class="color_name">white</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Pink.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div pink">                                            
+                                            <p class="color_name">pink</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Orange.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div orange">                                            
+                                            <p class="color_name">orange</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Red.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div red">                                            
+                                            <p class="color_name">red</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Purple.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div purple">                                            
+                                            <p class="color_name">Purple</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Yellow.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div yellow">                                            
+                                            <p class="color_name">yellow</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Green.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div green">                                            
+                                            <p class="color_name">green</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Blue.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div blue">                                            
+                                            <p class="color_name">blue</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Brown.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div brown">                                            
+                                            <p class="color_name">brown</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flip"> 
+                                <div class="card"> 
+                                    <div class="face front"> 
+                                        <img src="images/Grey.png" alt=""/>
+                                    </div> 
+                                    <div class="face back"> 
+                                        <div class="input_div grey">                                            
+                                            <p class="color_name">grey</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
                     </div>
                     <div class="panel-group filter_accordion" id="filter_accordion">
                         <div class="panel panel-default custom_panel level_1">
@@ -426,67 +571,7 @@
         </div>
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script>
-            $(document).ready(function () {
-//                focus to search on page load
-                $('.search_div .search').focus();
-//                ajax request on input field
-                $('#filter_form :input').change(function () {
-                    console.log($('#filter_form').serializeArray());
-                });
-//                custom place holder for search
-                $("span.custom_holder + input").keyup(function () {
-                    if ($(this).val().length) {
-                        $(this).prev('span.custom_holder').hide();
-                    } else {
-                        $(this).prev('span.custom_holder').show();
-                    }
-                });
-                $("span.custom_holder").click(function () {
-                    $(this).next().focus();
-                });
-
-//                margin bottom set to zero for opened accordion
-                $('.filter_heading').click(function () {
-                    if ($(this).hasClass('collapsed')) {
-                        $(this).parent(".custom_panel").css('margin-bottom', '0px');
-                    } else {
-                        $(this).parent(".custom_panel").css('margin-bottom', '36px');
-                    }
-                });
-
-//                make jquery contain case insensitive
-                // New selector
-                jQuery.expr[':'].Contains = function (a, i, m) {
-                    return jQuery(a).text().toUpperCase()
-                            .indexOf(m[3].toUpperCase()) >= 0;
-                };
-
-// Overwrites old selecor
-
-                jQuery.expr[':'].contains = function (a, i, m) {
-                    return jQuery(a).text().toUpperCase()
-                            .indexOf(m[3].toUpperCase()) >= 0;
-                };
-                // search in country 
-                $('#search_country').keyup(function () {
-                    var search = $(this).val();
-                    $('.country_list_search .item').hide();
-                    $('.country_list_search .item:contains("' + search + '")').show();
-                });
-                //mark country selecttion
-                $('.country_search .country_list_search .item').click(function(){
-                    $('.country_search .country_list_search .item').not(this).removeClass('selected');
-                    $(this).toggleClass('selected');
-                    if($(this).hasClass('selected')){
-                        var country = $(this).children('p').text();
-                        $('#user_selected_country').val(country);
-                    }else{
-                        $('#user_selected_country').val('');
-                    }
-                });
-            });
-        </script>
+        <script src="js/sidebar.js" type="text/javascript"></script>
     </body>
 
 </html>
