@@ -1,0 +1,54 @@
+.breifhome{
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    height: calc(100vh - 0px);//replace 0px by height of the heder
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-image: url('../images/home_page.jpg');
+}
+.breifhome .top_head{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 28px;
+}
+.breifhome .top_head h1{
+    text-align: center;
+    font-family: Didot Bold Italic;
+    font-size: 44px;
+}
+.breifhome .middle_head{
+    display: block;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    right: 0;
+    top: 50%;
+}
+.breifhome .middle_head h2{
+    text-align: center;
+    font-family: HelveticaNeueLight;
+    font-size: 40px;
+}
+.breifhome .bottom_button{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 28px;
+}
+.breifhome .bottom_button a{
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    color: #000;    
+    font-family: HelveticaNeueLight;
+    font-size: 24px;
+    text-decoration: none;
+}
