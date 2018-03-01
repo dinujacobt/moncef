@@ -176,6 +176,12 @@ section.brief_inner{
     width: 85%;
     margin: auto;
     display: block;
+	min-height: 220px;
+	max-height: 220px;
+}
+.user_home_products .products_list .item .image .img{
+	height: 220px;
+	vertical-align: middle;
 }
 .user_home_products .products_list .item .desc .name{
     font-weight: 600;
@@ -185,7 +191,7 @@ section.brief_inner{
 }
 .user_home_products .products_list .item .desc .vendor{
     font-weight: 300;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1;
     margin: 0;
     font-style: italic;
