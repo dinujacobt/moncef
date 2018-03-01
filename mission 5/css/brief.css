@@ -478,7 +478,7 @@ section.brief_inner{
     margin-top: -10px;
 }
 .fixed_heifht_images_list{
-        position: relative;
+    position: relative;
     height: 324px;
     overflow: hidden;
 }
@@ -487,6 +487,8 @@ section.brief_inner{
     top: 0;
     left: 0;
     width: 100%;
+    display: table;
+    height: 100%;
     transition: top 1s ease;
     -webkit-transition: top 1s ease;
 }
