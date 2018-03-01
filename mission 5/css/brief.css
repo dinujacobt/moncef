@@ -176,12 +176,12 @@ section.brief_inner{
     width: 85%;
     margin: auto;
     display: block;
-	min-height: 220px;
-	max-height: 220px;
+    min-height: 220px;
+    max-height: 220px;
 }
 .user_home_products .products_list .item .image .img{
-	height: 220px;
-	vertical-align: middle;
+    height: 220px;
+    vertical-align: middle;
 }
 .user_home_products .products_list .item .desc .name{
     font-weight: 600;
@@ -328,4 +328,231 @@ section.brief_inner{
     bottom: 10px;
     left: 0;
     right: 0;
+}
+
+
+.brief_common_1{
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    border-left: 1px solid #000;
+    position: relative;
+}
+.m-t-40{
+    margin-top: 40px;
+}
+.brief_common_1 .left{
+    width: 160px;    
+    min-height: 160px;
+    position: relative;
+}
+.brief_common_1 .left .grey_bg{
+    background: #e6e6e6;    
+    padding: 2px 10px;
+    border-radius: 0 5px 5px 0;
+}
+.brief_common_1 .left .grey_bg p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+.brief_common_1 .left .address{
+    padding-left: 10px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+.brief_common_1 .right.top{
+    top: 20px;
+}
+.brief_common_1 .right.bottom{
+    bottom: 0px;
+}
+.brief_common_1 .right{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    width: 70px;
+}
+.brief_common_1 .right a{
+    color: #333;
+    text-decoration: none;
+}
+.brief_common_1 .right .icon{
+    background: #fdda00;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: block;
+    margin: auto;
+    padding-top: 1px;
+}
+.brief_common_1 .right .icon .fa{
+    line-height: 22px;
+    text-align: center;
+    font-weight: 300;
+}
+.brief_common_1 .right p{
+    margin: 0;
+    line-height: 1;
+}
+.brief_common_1 .right .number{
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: auto;
+    background: #fdda00;
+    border-radius: 50%;
+}
+.brief_common_1 .right .number p{
+    font-weight: 700;
+    margin: 0;
+    line-height: 48px;
+    font-size: 22px;
+}
+.brief_common_1 .delete_vendor{
+    display: block;
+    padding-left: 10px;
+    margin-bottom: -20px;
+}
+.brief_common_1 .delete_vendor a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 300;
+}
+.brief_common_1 .delete_vendor a i{
+    font-weight: 300;
+}
+.brief_common_1 .left .edit_vendor{
+    position: absolute;
+    bottom: -64px;
+    right: 0;
+    text-align: center;
+    width: 50px;
+}
+.brief_common_1 .left .edit_vendor a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+    font-size: 10px;
+}
+.brief_common_1 .left .edit_vendor .fa{
+    display: block;
+    margin: auto;
+    font-size: 28px;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+.brief_common_1 .left .edit_vendor .fa:hover{
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+@keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0)
+    }
+    50% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform:     translateY(-310px);
+        transform:         translateY(-10px)
+    }
+}
+.pdt_iages{
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.vendors_and_products.products_images{
+    display: block;
+    margin: auto;
+    float: initial;
+    margin-top: -10px;
+}
+.fixed_heifht_images_list{
+        position: relative;
+    height: 324px;
+    overflow: hidden;
+}
+.fixed_heifht_images_list .scrolling_images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 1s ease;
+    -webkit-transition: top 1s ease;
+}
+.pdt_iages .images_list{
+    padding: 20px;
+    height: 300px;
+    display: table;
+    width: 100%;
+}
+.pdt_iages .images_list .images_container{
+    display: table-cell;
+    vertical-align: middle;
+}
+.pdt_iages .images_list.one .images_container .item,.pdt_iages .images_list.two .images_container .item,.pdt_iages .images_list.three .images_container .item{
+    width: 33.33%;
+    padding: 6px;
+    display: block;
+    margin: auto;
+}
+.pdt_iages .images_list.four .images_container .item{
+    width: 33%;
+    padding: 6px;
+    display: inline-block;
+    margin: auto;
+}
+.pdt_iages .images_list .images_container .item img{
+    max-height: 100px;
+    max-width: 100px;
+    display: block;
+    margin: auto;
+}
+.pdt_iages .images_list.four .images_container .middle_alligner,.pdt_iages .images_list.five .images_container .middle_alligner{
+    display: block;
+    width: 68%;
+    margin: auto;
+}
+.pdt_iages .images_list.four .images_container .middle_alligner .item,.pdt_iages .images_list.five .images_container .middle_alligner .item{
+    width: 49%;
+    display: inline-block;
+}
+.pdt_iages .images_list.five .images_container .middle_alligner .item:last-child{
+    margin-left: 25%;
+}
+.pdt_iages .images_list.six .images_container .middle_alligner,.pdt_iages .images_list.seven .images_container .middle_alligner,.pdt_iages .images_list.eight .images_container .middle_alligner,.pdt_iages .images_list.nine .images_container .middle_alligner{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.pdt_iages .images_list.six .images_container .middle_alligner .item,.pdt_iages .images_list.seven .images_container .middle_alligner .item,.pdt_iages .images_list.eight .images_container .middle_alligner .item,.pdt_iages .images_list.nine .images_container .middle_alligner .item{
+    width: 33%;
+    display: inline-block;
+}
+.pdt_iages .images_list.seven .images_container .middle_alligner .item:last-child{
+    margin-left: 33%;
+}
+.pdt_iages .images_list.eight .images_container .middle_alligner .item:nth-child(7){
+    margin-left: 16.5%;
+}
+.image_scrollar{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.image_scrollar a{
+    color: #333;
+    text-decoration: none;
+    margin-right: 8px;
 }
