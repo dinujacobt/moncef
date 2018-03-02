@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,300,400,500,600,700" rel="stylesheet">
+
+        <link href="css/brief.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <section class="brief_inner">
+            <div class="specification_unnecessary_div_delete_on_integration">
+            <div class="specification_container">
+                <p class="specification_name">PEDRALI</p>
+                <div class="vendors_and_products">
+                    <div class="products">
+                        <p class="big">4</p>
+                        <p class="small">Specifications</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search_div">
+                <div class="form_div more_width">
+                    <form action="#">
+                        <input type="text" placeholder="SEARCH specifications..." name="search"/>
+                    </form>
+                </div>
+            </div>
+            <div class="common_table">                
+                <table class="table table-responsive specification_table">
+                    <tbody>
+                        <tr class="heading">
+                            <th>visual <a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>category <a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>product name <a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>project name <a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>provenance <a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>lead time<a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>
+                            <th>qty<a href="#"><i class="glyphicon glyphicon-triangle-bottom"></i></a></th>                            
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <img class="spec_image img-responsive" src="images/pd9.png" alt=""/>
+                            </td>
+                            <td>Chair</td>
+                            <td>Diagnal</td>             
+                            <td>Hyatt Lobby</td>
+                            <td>Italy</td>
+                            <td>60 days</td>             
+                            <td>
+                                10 pcs
+                                <div class="absolute_content">
+                                    <div class="close">
+                                        <a href="#">
+                                            <img class="icon" src="images/close.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="email">
+                                        <a href="#">
+                                            <img class="icon" src="images/E-mail.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>      
+                        <tr class="active">
+                            <td>
+                                <img class="spec_image img-responsive" src="images/pd8.png" alt=""/>
+                            </td>
+                            <td>Chair</td>
+                            <td>Trampolin</td>             
+                            <td>Hyatt Lobby</td>
+                            <td>N/A</td>
+                            <td>30 days</td>             
+                            <td>
+                                7 pcs
+                                <div class="absolute_content">
+                                    <div class="close">
+                                        <a href="#">
+                                            <img class="icon" src="images/close.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="email">
+                                        <a href="#">
+                                            <img class="icon" src="images/E-mail.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>      
+                        <tr class="">
+                            <td>
+                                <img class="spec_image img-responsive" src="images/pd7.png" alt=""/>
+                            </td>
+                            <td>Chair</td>
+                            <td>Trampolin</td>             
+                            <td>Hyatt Lobby</td>
+                            <td>N/A</td>
+                            <td>30 days</td>             
+                            <td>
+                                7 pcs
+                                <div class="absolute_content">
+                                    <div class="close">
+                                        <a href="#">
+                                            <img class="icon" src="images/close.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="email">
+                                        <a href="#">
+                                            <img class="icon" src="images/E-mail.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="">
+                            <td>
+                                <img class="spec_image img-responsive" src="images/pd6.png" alt=""/>
+                            </td>
+                            <td>Chair</td>
+                            <td>Trampolin</td>             
+                            <td>Hyatt Lobby</td>
+                            <td>N/A</td>
+                            <td>30 days</td>             
+                            <td>
+                                7 pcs
+                                <div class="absolute_content">
+                                    <div class="close">
+                                        <a href="#">
+                                            <img class="icon" src="images/close.png" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="email">
+                                        <a href="#">
+                                            <img class="icon" src="images/E-mail.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </section>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $('.specification_table tr').click(function(){
+               $('.specification_table tr').removeClass('active');
+               $(this).addClass('active');
+            });
+        </script>
+    </body>
+</html>
