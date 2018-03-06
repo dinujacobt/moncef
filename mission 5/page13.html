@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,300,400,500,600,700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/brief.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <section class="brief_inner">
+            <div class="col-md-12">
+                <div class="row man_field_cont">
+                    <div class="mandatory_fields">
+                        <p class="text">OPTIONAL FIELDS</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="#" class="green_validation_form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="inp mfont" placeholder="Ref. product">
+                            </div>
+                            <div class="form-group diamentios">
+                                <label class="use">Dimensions (mm)</label>
+                                <div class="left">
+                                    <input type="text" class="inp mfont" placeholder="Width">
+                                    <input type="text" class="inp mfont" placeholder="Height">
+                                    <input type="text" class="inp mfont" placeholder="Depth">
+                                    <input type="text" class="inp mfont" placeholder="Diameter">
+                                </div>
+                                <div class="right">
+                                    <div class="tab_disp">
+                                        <div class="vert">
+                                            <div class="add_files">                                            
+                                                <div class="link">
+                                                    <a href="#">
+                                                        <span><i class="fa fa-plus"></i></span>
+                                                        <span>add</span>
+                                                        <span>technical files</span>
+                                                    </a>
+                                                </div>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="inp mfont" placeholder="Weight (kg)">
+                            </div>
+                            <div class="download_links">
+                                <p class="side">Side folders</p>
+                                <a href="files/1.pdf" target="_blank">technicaldimensions.pdf</a>
+                                <a href="files/2.pdf" target="_blank">sofangles.dwg</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">                            
+                            <div class="form-group">
+                                <select class="inp mfont">
+                                    <option selected="">Warranty</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="inp mfont" placeholder="Product origin">
+                            </div>
+                            <div class="form-group">
+                                <select class="inp mfont">
+                                    <option selected="">Lead time</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" placeholder="Extra remarks" class="inp mfont"></textarea>
+                            </div>
+                            <div class="submit_div">
+                                <button>
+                                    <img class="sub_img" src="images/Green Tick.png" alt=""/>
+                                    <span>DONE</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="material_modal" class="modal fade popups close-btn material_modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="heading medium_font">
+                                <h3>Select from pre-qualified material</h3>
+                            </div>
+                        </div>
+                        <div class="modal-body m-b-10">
+                            <div class="check_box_lists">
+                                <div class="col">
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="fabric_cb" /> 
+                                            <label class="main">Fabric</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Felt  </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Velvet    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Silk    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Liner    </label> 
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/> 
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/> 
+                                                <label class="sub">Liner     </label>  
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Liner    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/> 
+                                                <label class="sub">Liner </label>    
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb fabric"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="glass_cb" /> <label>Glass</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb glass"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb glass" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb glass"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb glass"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb glass"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="metal_cb" /> 
+                                            <label class="main">Fabric</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Felt  </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Velvet    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Silk    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Liner    </label> 
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/> 
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/> 
+                                                <label class="sub">Liner     </label>  
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Liner    </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb metal"/>
+                                                <label class="sub">Fur</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="stone_cb" /> <label>Stone</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb stone"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="wood_cb" /> <label>Wood</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Silk       </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb wood"/>
+                                                <label class="sub">Liner   </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="cement_cb" /> <label>Cement Based</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb cement"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb cement" />
+                                                <label class="sub">Cotton </label>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="plastic_cb" /> <label>Plastic</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb plastic" />
+                                                <label class="sub">Cotton </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list">
+                                        <div class="am">
+                                            <input type="checkbox" class="" id="composite_cb" /> <label>Composite Material</label>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite"/>
+                                                <label class="sub">Leather </label>
+                                            </div>
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                            <div class="item">
+                                                <input type="checkbox" class="cb composite" />
+                                                <label class="sub">Cotton </label>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-close">
+                            <img src="images/modal_close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="" />
+                        </div>
+                        <a href="#">
+                            <div class="modal-generate">
+                                <span>APPLY</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $('#material_modal').modal('show');
+            $(document).ready(function () {
+                $("#fabric_cb").click(function () {
+                    $(".cb.fabric").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.fabric").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#fabric_cb").prop("checked", false);
+                    }
+                });
+                $("#glass_cb").click(function () {
+                    $(".cb.glass").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.fabric").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#glass_cb").prop("checked", false);
+                    }
+                });
+                $("#metal_cb").click(function () {
+                    $(".cb.metal").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.metal").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#metal_cb").prop("checked", false);
+                    }
+                });
+                $("#stone_cb").click(function () {
+                    $(".cb.stone").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.stone").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#stone_cb").prop("checked", false);
+                    }
+                });
+                $("#wood_cb").click(function () {
+                    $(".cb.wood").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.wood").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#wood_cb").prop("checked", false);
+                    }
+                });
+                $("#cement_cb").click(function () {
+                    $(".cb.cement").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.cement").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#cement_cb").prop("checked", false);
+                    }
+                });
+                $("#composite_cb").click(function () {
+                    $(".cb.composite").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.composite").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#composite_cb").prop("checked", false);
+                    }
+                });
+                $("#plastic_cb").click(function () {
+                    $(".cb.plastic").prop('checked', $(this).prop('checked'));
+                });
+
+                $(".cb.plastic").change(function () {
+                    if (!$(this).prop("checked")) {
+                        $("#plastic_cb").prop("checked", false);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

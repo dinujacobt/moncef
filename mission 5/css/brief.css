@@ -1,3 +1,6 @@
+@import url("../../css/popups.css");
+
+
 .breifhome{
     display: block;
     float: left;
@@ -786,6 +789,10 @@ section.brief_inner{
     color: #333;
     font-weight: 300;
 }
+.green_validation_form .inp.mfont{
+    font-size: 15px;
+    font-weight: 500;
+}
 .green_validation_form .inp.lfont{
     font-size: 17px;
     font-weight: 500;
@@ -905,6 +912,7 @@ section.brief_inner{
 .green_validation_form .form-group.diamentios .left{
     display: inline-block;
     width: 49%;
+    float: left;
 }
 .green_validation_form .form-group.diamentios label{
     font-weight: 500;
@@ -912,13 +920,14 @@ section.brief_inner{
     text-align: left;
 }
 .green_validation_form .form-group.diamentios .left .inp{
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .green_validation_form .form-group.diamentios .right{
     width: 49%;
     display: inline-block;
     position: relative;
-    height: 168px;
+    height: 136px;
+    float: right;
 }
 .green_validation_form .form-group.diamentios .right .tab_disp{
     height: 100%;
@@ -943,4 +952,207 @@ section.brief_inner{
 }
 .green_validation_form .form-group.diamentios .right .add_files .link{
     display: inline-block;
+}
+.green_validation_form .download_links,.green_validation_form .submit_div{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.green_validation_form .download_links p,.green_validation_form .download_links a{
+    font-size: 13px;
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+}
+.green_validation_form .submit_div button{
+    background: transparent;
+    border:none;
+    float: right;
+    text-align: center;
+}
+.green_validation_form .submit_div button .sub_img{
+    width: 44px;
+}
+.green_validation_form .submit_div button span{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+}
+.green_validation_form .submit_div button:active,.green_validation_form .submit_div button:hover,.green_validation_form .submit_div button:focus{
+    outline: none;
+}
+.popups .modal-content .heading.medium_font h3{
+    font-size: 18px;
+}
+.material_modal .modal-dialog{
+    width: 748px;
+    margin: 20px auto;
+}
+.material_modal .check_box_lists{
+    padding: 0 40px;
+}
+.material_modal .check_box_lists .col{
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+.material_modal .check_box_lists .col .item{
+    display: block;
+    width: 100%;
+}
+.material_modal .check_box_lists .col .main_cb{
+    font-weight: 700;
+    font-size: 14px;
+}
+.material_modal .check_box_lists .col .list{
+    margin-bottom: 12px;
+}
+.material_modal .check_box_lists .col .list .main{
+    font-size: 12px;
+    font-weight: 700;
+}
+.material_modal .check_box_lists .col .list .sub{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 0;
+}
+.material_modal .check_box_lists .col .list .cb{
+    width: 12px;
+    margin: 0;
+}
+.material_modal .check_box_lists .col .list .am{
+    width: 136px;
+    margin: 0 auto;
+}
+
+
+.menu_body_m5{
+    display: block;
+    float: left;
+    width: 100%;
+    background: #f2f2f2;
+    position: relative;
+    padding: 12px 36px;
+    z-index: 1000;
+}
+.menu_body_m5 .col{
+    width: 14.2%;
+    float: left;
+}
+.menu_body_m5 .col .cat_name{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.menu_body_m5 .col a{
+    color: #333;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 12px;    
+}
+.menu_body_m5 .abs_content{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    width: 124px;
+    height: 140px;
+    border-radius: 50%;
+    background: #fdda00;
+    margin: auto;
+    z-index: 10;
+}
+.menu_body_m5 .abs_content .up_arrow{
+    width: 50px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.menu_body_m5 .abs_content .full{
+    position: absolute;
+    bottom: 12%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.menu_body_m5 .abs_content .full span{
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.menu_body_m5 .ab2{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.menu_body_m5 .ab2 .cnci .icon{
+    display: inline-block;
+    width: 30px;
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fdda00;
+    border-radius: 50%;
+    margin-right: 4px;
+    margin-top: 5px;
+}
+.menu_body_m5 .ab2 .cnci a{
+    color: #333;
+    text-decoration: none;
+}
+.menu_body_m5 .ab2 .cnci .name{
+    display: inline-block;
+    width: 100px;
+}
+.menu_body_m5 .ab2 .cnci .name span{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+}
+.m5_modal .pdt_image{
+    width: 180px;
+    float: right;
+    padding-right: 10px;
+}
+.m5_modal .modal-body{
+    padding-top: 40px!important;
+}
+.m5_modal .modal-body .min_h{
+    height: 120px;
+    width: 100%;
+    display: table;
+}
+.m5_modal .modal-body .v_m{
+    display: table-cell;
+    vertical-align: middle;
+}
+.m5_modal .modal-body .name{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+.m5_modal .modal-body .col-md-6{
+    padding-bottom: 40px;
+}
+.m5_modal .modal-body .by{
+    margin: 0;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.m5_modal .modal-body .mod_close{
+    text-align: center;
+}
+.m5_modal .modal-body .mod_close p{
+    margin: 0;
+    cursor: pointer;
 }
