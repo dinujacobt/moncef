@@ -2,8 +2,8 @@
     display: block;
     float: left;
     width: 100%;
-    position: relative;
-    height: calc(100vh - 0px);//replace 0px by height of the heder
+    position: relative;    
+    height: calc(100vh - 0px); /*replace 0px by height of header*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;    
@@ -816,9 +816,14 @@ section.brief_inner{
 }
 .green_validation_form .form-group{
     padding-bottom: 40px;
-    width: 100%;
-    max-width: 100%;
     position: relative;
+    width: 80%;
+}
+.green_validation_form .col-md-6:first-child .form-group{
+    float: left;
+}
+.green_validation_form .col-md-6:nth-child(2) .form-group{
+    float: right;
 }
 .green_validation_form .with_links .link:last-child p{
     margin-bottom: 16px;
@@ -895,4 +900,47 @@ section.brief_inner{
     font-size: 14px;
     margin:  0;
     text-align: center;
+}
+
+.green_validation_form .form-group.diamentios .left{
+    display: inline-block;
+    width: 49%;
+}
+.green_validation_form .form-group.diamentios label{
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+}
+.green_validation_form .form-group.diamentios .left .inp{
+    margin-bottom: 10px;
+}
+.green_validation_form .form-group.diamentios .right{
+    width: 49%;
+    display: inline-block;
+    position: relative;
+    height: 168px;
+}
+.green_validation_form .form-group.diamentios .right .tab_disp{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.green_validation_form .form-group.diamentios .right .vert{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.green_validation_form .form-group.diamentios .right .add_files{
+    text-align: center;
+}
+.green_validation_form .form-group.diamentios .right .add_files a{
+    color: #333;
+    text-decoration: none;
+}
+.green_validation_form .form-group.diamentios .right .add_files span{
+    display: block;
+    width: 100%;
+}
+.green_validation_form .form-group.diamentios .right .add_files .link{
+    display: inline-block;
 }
