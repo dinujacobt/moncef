@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Dosis:100,300,400,500,600,700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/brief.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <section class="brief_inner">
+            <div class="col-md-12">
+                <div class="sliding_page">
+                    <div class="page_slider">
+                        <div class="page1">
+                            <div class="row man_field_cont">
+                                <div class="mandatory_fields">
+                                    <p class="text">Mandatory Fields</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form action="#" class="green_validation_form">
+                                    <div class="col-md-6">
+                                        <div class="form-group with_links">
+                                            <select class="inp lfont">
+                                                <option selected="">PEDRALI</option>
+                                            </select>
+                                            <a class="link" id="create_vendor" href="#"><p><i class="fa fa-plus"></i> create new VENDOR</p></a>
+                                            <a class="link" href="#"><p><i class="fa fa-times"></i> N/A no vendor</p></a>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="inp error lfont" placeholder="product name">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="inp" placeholder="Material">
+                                            <div class="abs_content">
+                                                <a href="#"><i class="fa fa-plus"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="use">Use</label>
+                                            <input type="hidden" id="use_input">
+                                            <div class="button_set">
+                                                <button class="btn">indoor</button>
+                                                <button class="btn">outdoor</button>
+                                                <button class="btn">indoor / outdoor</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class=" min-height_div">
+                                            <div class="vert">
+                                                <div class="drag_and_drop">
+                                                    <!--drag and drop functionality here-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="next_div">
+                                            <img class="forward" src="images/Forward.png" alt=""/>
+                                            <p class="forward_text">Next</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="page2">
+                            <div class="col-md-6">
+                                <div class="brief_common_1">
+                                    <div class="left input_set">
+                                        <div class="input_f">
+                                            <input type="text" class="grey_bg" name="vendor_name" placeholder="Vendor name *">
+                                        </div>
+                                        <div class="address add_inp">
+                                            <input class="grey_bg" type="text" placeholder="Address"/>
+                                            <input class="grey_bg" type="text" placeholder="PO Box"/>
+                                            <input class="grey_bg" type="text" placeholder="Country *"/>
+                                            <input class="grey_bg" type="text" placeholder="Telephone"/>
+                                            <input class="grey_bg" type="text" placeholder="Info e-mail"/>
+                                            <input class="grey_bg" type="text" placeholder="Website"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="brief_common_1 m-t-40">
+                                    <div class="left input_set">
+                                        <div class="input_f">
+                                            <input type="text" class="grey_bg" name="" placeholder="CONTACT name *">
+                                        </div>
+                                        <div class="address add_inp">
+                                            <input class="grey_bg" type="text" placeholder="Email *"/>
+                                            <input class="grey_bg" type="text" placeholder="Phone"/>
+                                        </div>
+                                    </div>
+                                    <div class="delete_vendor">
+                                        <span class="info_text">fields marked with asterix (*) are mandatory</span>
+                                    </div>
+
+                                    <div class="bottom right submit_btn">
+                                        <img class="img-responsive img" src="images/Yellow Tick.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_vendor_image">
+                                    <img class="img-responsive img" src="images/Vendor Book.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $('#create_vendor').click(function(){
+                $('.page_slider').css('left','-100%');
+            });
+        </script>
+    </body>
+</html>
