@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+        <link href="css/accounts.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="user_account_edit">
+            <div class="container">
+                <form class="account_edit_form" onsubmit="return mySubmitFunction(event)" id="account_edit_form_personal" method="post">
+                    <div class="form-head">
+                        <h3>Edit Account <span>- Personal</span></h3>
+                        <div class="backward_icon">
+                            <a href="#"><img class="img-responsive" src="images/left.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 no-padding">
+                        <div class="form-group">
+                            <label>Name <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>last name <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="last_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Country<span>*</span></label>
+                            <div class="input">
+                                <select class="inp" name="country">
+                                    <option selected>United Arab Emirates</option>
+                                    <option> Africa </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>City <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>designation <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="email" name="designation">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>language<span>*</span></label>
+                            <div class="input">
+                                <select class="inp" name="language">
+                                    <option selected>English</option>
+                                    <option> French </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>e-mail <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="email" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="phone">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>password <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="mandatory_field_info">* All fields marked with asterisk [*] are mandatory</span>
+                        </div>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                        <div class="image_uploader rounded">
+                            <div class="upload_btn">
+                                <input type="file" name="userfile">
+                                <div class="upload_icon">
+                                    <img class="img img-responsive" src="images/add1.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>update with your company logo here</p>
+                            </div>
+                            <div class="text">
+                                <p>jpg png bmp</p>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox_container">
+                            <p>
+                                <input class="custom_checkbox" checked="" id="newletter" type="checkbox"  name="newsletter">
+                                <label for="newletter">I Want to receive the Konatiner newletter</label>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <p class="contact_info">contact us at <a href="mailto:hello@thecontainer.com">hello@thecontainer.com</a> to remove your account</p>
+                        </div>
+                        <div class="submit_button">
+                            <button class="btn" type="submit" >Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+                    function mySubmitFunction(evt) {
+                        evt.preventDefault();
+                        var inp = $('.account_edit_form .inp');
+                        inp.removeClass('error').filter(function () { // Remove error classes. Filter
+                            return !$.trim(this.value);              // to return el. without value
+                        }).addClass('error');
+                        return false;
+                    }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,216 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 12, 2018, 9:32:48 PM
+    Author     : dinu
+*/
+
+.user_account_edit{
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.account_edit_form .no-padding{
+    padding: 0;
+}
+.account_edit_form .form-head h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: #231f20;
+}
+.account_edit_form .form-head h3 span{
+    font-weight: 400;
+    color: #262223;
+}
+.account_edit_form  .form-group label{
+    display: block;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    color: #262223;
+}
+.account_edit_form  .form-group .input{    
+    position: relative;
+}
+.account_edit_form  .form-group .input .inp{
+    background: #e5e6e8;
+    border-radius: 25px;
+    width: 260px;
+    border: none;
+    padding: 2px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5f5d5e;
+
+}
+.account_edit_form  .form-group .input.mandatory:before{
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    content: '|';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #5f5d5e;
+}
+.account_edit_form  .form-group .inp:active,.account_edit_form  .form-group .inp:hover,.account_edit_form  .form-group .inp:focus{
+    outline: none;
+}
+
+.account_edit_form .mandatory_field_info{
+    font-size: 12px;
+    color: #969696;
+}
+
+.account_edit_form .image_uploader{
+    width: 216px;
+    height: 190px;
+    padding: 36px;    
+    border: 2px dashed #615e5f;
+    border-radius: 8px;
+}
+
+.account_edit_form .image_uploader .upload_btn{
+    position: relative;
+
+}
+.account_edit_form .image_uploader .upload_btn input{
+    margin: auto;
+    display: block;
+    opacity: 0;
+}
+.account_edit_form .image_uploader .upload_icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 28px;
+    z-index: -1;
+}
+.account_edit_form .image_uploader .text{
+    margin-top: 20px;
+}
+.account_edit_form .image_uploader .text p{
+    text-transform: uppercase;
+    color: #cbccce;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+/* Base for label styling */
+.account_edit_form .custom_checkbox:not(:checked),
+.account_edit_form .custom_checkbox:checked {
+    position: absolute;
+    left: -9999px;
+}
+.account_edit_form .custom_checkbox:not(:checked) + label,
+.account_edit_form .custom_checkbox:checked + label {
+    position: relative;
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+.account_edit_form .custom_checkbox:not(:checked) + label:before,
+.account_edit_form .custom_checkbox:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 16px; 
+    height: 16px;
+    border: 2px solid #969394;
+    background: #fff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+}
+/* checked mark aspect */
+.account_edit_form .custom_checkbox:not(:checked) + label:after,
+.account_edit_form .custom_checkbox:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 16px;
+    line-height: 0.8;
+    color: #1c1c1c;
+    transition: all .2s;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* checked mark aspect changes */
+.account_edit_form .custom_checkbox:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.account_edit_form .custom_checkbox:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* hover style just for information */
+.account_edit_form .custom_checkbox + label:hover:before {
+    border: 2px solid #4778d9!important;
+}
+.account_edit_form .custom_checkbox + label,.account_edit_form .contact_info,.account_edit_form .contact_info a{
+    color: #454243;
+    font-weight: 300;
+    font-size: 13px;
+    text-decoration: none;
+}
+.account_edit_form .checkbox_container{
+    margin-top: 30px;
+    margin-left: 22px;
+}
+.account_edit_form .submit_button .btn{
+    background: #fcda01;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-family: inherit;
+}
+.account_edit_form .submit_button .btn:active,.account_edit_form .submit_button .btn:hover,.account_edit_form .submit_button .btn:focus{
+    outline: none;
+}
+
+.account_edit_form .image_uploader.rounded{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.account_edit_form .form-group{
+    margin-bottom: 8px;
+}
+
+#account_edit_form_personal .form-group{
+    margin-bottom: 0;
+}
+.account_edit_form .form-group .input .inp.error{
+    background: #f4a8a8;
+}
+.account_edit_form .form-head{
+    position: relative;
+}
+.account_edit_form .form-head .backward_icon{
+    position: absolute;
+    left: -34px;
+    top: -4px;;
+    width: 34px;
+}
+.account_edit_form .form-head .backward_icon img{
+    width: 34px;
+}

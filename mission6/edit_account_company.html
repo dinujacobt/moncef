@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+        <link href="css/accounts.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="user_account_edit">
+            <div class="container">
+                <form class="account_edit_form" onsubmit="return mySubmitFunction(event)" id="account_edit_form_company" action="#" method="post">
+                    <div class="form-head">
+                        <h3>Edit Account <span>- Company</span></h3>
+                    </div>
+                    <div class="col-md-5 no-padding">
+                        <div class="form-group">
+                            <label>Company Name <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="company_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Country<span>*</span></label>
+                            <div class="input">
+                                <select class="inp" name="country">
+                                    <option selected>United Arab Emirates</option>
+                                    <option> Africa </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>City <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Email <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="email" name="company_email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Website <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Company Phone <span>*</span></label>
+                            <div class="input mandatory">
+                                <input class="inp" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="mandatory_field_info">* All fields marked with asterisk [*] are mandatory</span>
+                        </div>
+                    </div>
+                    <div class="col-md-7 no-padding">
+                        <div class="image_uploader">
+                            <div class="upload_btn">
+                                <input type="file" name="userfile">
+                                <div class="upload_icon">
+                                    <img class="img img-responsive" src="images/add1.png" alt=""/>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>update with your company logo here</p>
+                            </div>
+                            <div class="text">
+                                <p>jpg png bmp</p>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox_container">
+                            <p>
+                                <input class="custom_checkbox" checked="" id="newletter" type="checkbox"  name="newsletter">
+                                <label for="newletter">I Want to receive the Konatiner newletter</label>
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <p class="contact_info">contact us at <a href="mailto:hello@thecontainer.com">hello@thecontainer.com</a> to remove your account</p>
+                        </div>
+                        <div class="submit_button">
+                            <button class="btn" type="submit" >Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+                    function mySubmitFunction(evt) {
+                        evt.preventDefault();
+                        var inp = $('.account_edit_form .inp');
+                        inp.removeClass('error').filter(function () { // Remove error classes. Filter
+                            return !$.trim(this.value);              // to return el. without value
+                        }).addClass('error');
+                        return false;
+                    }
+        </script>
+    </body>
+</html>
