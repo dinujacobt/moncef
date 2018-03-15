@@ -32,7 +32,7 @@ and open the template in the editor.
     display: block;
     text-align: left;
     width: 100%;
-    font-weight: 400;
+    font-weight: 700;
     color: #262223;
     margin-bottom: 2px;
 }
@@ -68,10 +68,10 @@ and open the template in the editor.
 }
 
 .account_edit_form .mandatory_field_info{
-    font-size: 13px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     letter-spacing: 1px;
-    color: #969696;
+    color: #888686;
 }
 
 .account_edit_form .image_uploader{
@@ -111,16 +111,16 @@ and open the template in the editor.
     text-align: center;
 }
 .account_edit_form .form-group .input .inp::-webkit-input-placeholder {
-   font-style: italic;
+    font-style: italic;
 }
 .account_edit_form .form-group .input .inp:-moz-placeholder {
-   font-style: italic;  
+    font-style: italic;  
 }
 .account_edit_form .form-group .input .inp::-moz-placeholder {
-   font-style: italic;  
+    font-style: italic;  
 }
 .account_edit_form .form-group .input .inp:-ms-input-placeholder {  
-   font-style: italic; 
+    font-style: italic; 
 }
 /* Base for label styling */
 .account_edit_form .custom_checkbox:not(:checked),
@@ -142,7 +142,7 @@ and open the template in the editor.
     position: absolute;
     left: 0;
     top: 0;
-        width: 15px;
+    width: 15px;
     height: 14px;
     border: 1px solid #878586;
     background: #fff;
@@ -153,7 +153,7 @@ and open the template in the editor.
 .account_edit_form .custom_checkbox:checked + label:after {
     content: url(../images/Tickbox-01.png);
     position: absolute;
-        top: -63px;
+    top: -63px;
     left: -72px;
     font-size: 16px;
     line-height: 0.8;
