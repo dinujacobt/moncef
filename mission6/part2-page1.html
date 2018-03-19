@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+        <link href="css/accounts.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="user_account_edit">
+            <div class="container">
+                <form class="account_edit_form" onsubmit="return mySubmitFunction(event)" id="account_edit_form_personal" method="post">
+                    <div class="form-head">
+                        <h3>Account <span>- Confidential</span></h3>
+                        <p class="confidential">Strictly confidential information. This information remains between thekontainer &AMP; you only.</p>
+                        <div class="backward_icon">
+                            <a href="#"><img class="img-responsive" src="images/left.png" alt=""/></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 fixed-padding part2">
+                        <p class="option-selecttor-info">*Please note that you can't select multiple options</p>
+                        <div class="form-group checkbox_container optionclass c1 part2-cb">
+                            <p>
+                                <input class="custom_checkbox" id="option1" type="checkbox"  name="newsletter">
+                                <label id="option1-label" for="option1">Is your company interested in back commission</label>
+                            </p>
+                        </div>
+                        <div class="form-group checkbox_container optionclass c2 part2-cb">
+                            <p>
+                                <input class="custom_checkbox" id="option2" type="checkbox"  name="newsletter">
+                                <label id="option2-label" for="option2">Is your company interested in rewards</label>
+                            </p>
+                        </div>
+                        <div class="form-group checkbox_container optionclass c3 part2-cb">
+                            <p>
+                                <input class="custom_checkbox" id="option3" type="checkbox"  name="newsletter">
+                                <label id="option3-label" for="option3">Not interested in either</label>
+                            </p>
+                        </div>
+                        <div class='option-1-next'>
+                            <div class='cb-container'>
+                                <div class="form-group checkbox_container inside-cb">
+                                    <p>
+                                        <input class="custom_checkbox percent-cb" id="3-per" type="checkbox"  name="newsletter">
+                                        <label id="3-per-label" class="percent-cb-label" for="3-per">3%</label>
+                                    </p>
+                                </div>
+                                <div class="form-group checkbox_container inside-cb">
+                                    <p>
+                                        <input class="custom_checkbox percent-cb" id="5-per" type="checkbox"  name="newsletter">
+                                        <label id="5-per-label" class="percent-cb-label" for="5-per">5%</label>
+                                    </p>
+                                </div>                                
+                            </div>
+                            <p class='payment-info'>commission credited after 100% payment from client</p>
+                            <div class="link">
+                                <a href="#">
+                                    <div class="link-container">
+                                        <p class="large">Click here</p>
+                                        <p class="small">to enter your Bank information</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class='option-2-next'>
+                            <div class="info-div">
+                                <p class="infor">We are currently working on a Reward program and will keep you informed shortly</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script>
+                    $('#option3').change(function () {
+                        if ($(this).is(":checked")) {
+                            $('#option2-label,#option1-label').addClass('grey-text');
+                            $("#option1,#option2").prop("disabled", true);
+                        } else {
+                            $('#option2-label,#option1-label').removeClass('grey-text');
+                            $("#option1,#option2").prop("disabled", false);
+                        }
+                    });
+                    $('#option1').change(function () {
+                        if ($(this).is(":checked")) {
+                            $('.optionclass.c2,.optionclass.c3').css('display', 'none');
+                            $('.optionclass.c1').css('margin-bottom', '8px');
+                            $('.account_edit_form .option-1-next').css('display','block');
+                        } else {
+                            $('.optionclass.c2,.optionclass.c3').css('display', 'block');
+                            $('.optionclass.c1').css('margin-bottom', '20px');
+                            $('.inside-cb .percent-cb').prop('checked', false);
+                            $('.account_edit_form .option-1-next').css('display','none');
+                        }
+                    });
+                    $('#option2').change(function () {
+                        if ($(this).is(":checked")) {
+                            $('.optionclass.c1,.optionclass.c3').css('display', 'none');
+                            $('.account_edit_form .option-2-next').css('display','block');
+                        } else {
+                            $('.optionclass.c1,.optionclass.c3').css('display', 'block');
+                            $('.account_edit_form .option-2-next').css('display','none');
+                        }
+                    });
+                    $('.inside-cb .percent-cb').change(function () {
+                        $('.inside-cb .percent-cb').not(this).prop('checked', false);
+                    });
+        </script>
+    </body>
+
+</html>

@@ -224,3 +224,119 @@ and open the template in the editor.
 .account_edit_form .form-head .backward_icon img{
     width: 34px;
 }
+
+
+/*part 2 starts*/
+
+.account_edit_form .confidential{
+    color: #292929;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-family: inherit;
+    margin-bottom: 0px;
+}
+.account_edit_form .option-selecttor-info{
+    color: #767676;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.account_edit_form .fixed-padding{
+    padding: 0 8px;
+}
+.account_edit_form .part2 .checkbox_container{
+    margin: 0 0 20px;
+}
+.account_edit_form .optionclass label{
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.account_edit_form .part2-cb .custom_checkbox:not(:checked) + label:before, .account_edit_form .part2-cb .custom_checkbox:checked + label:before{
+    top: 4px;
+}
+.account_edit_form .part2-cb .custom_checkbox:not(:checked) + label:after, .account_edit_form .part2-cb .custom_checkbox:checked + label:after{
+    top: -59px;
+}
+.account_edit_form .inside-cb .custom_checkbox:not(:checked) + label, .account_edit_form .inside-cb .custom_checkbox:checked + label{
+    padding-left: 23px;
+    margin-right: 20px;
+}
+.account_edit_form .inside-cb .custom_checkbox:not(:checked) + label:before, .account_edit_form .inside-cb .custom_checkbox:checked + label:before{
+    width: 13px;
+    height: 13px;
+}
+.account_edit_form .inside-cb .custom_checkbox:checked + label:after{
+    transform: scale(0.24);
+}
+.account_edit_form .inside-cb .custom_checkbox:not(:checked) + label:after, .account_edit_form .custom_checkbox:checked + label:after{
+    top: -64px;
+    left: -73px;
+}
+.account_edit_form .optionclass label.grey-text{
+    color:#6e6e6e!important;
+    font-weight: 400;
+}
+.account_edit_form .option-1-next,.account_edit_form .option-2-next{
+    display: none;
+}
+.account_edit_form .option-1-next .inside-cb{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.account_edit_form .option-1-next .cb-container{
+    width: 136px;
+    margin-left: 140px;
+}
+.account_edit_form .option-1-next .payment-info{
+    color: #818181;
+    letter-spacing: 0.8px;
+    padding-left: 36px;
+    font-weight: 300;
+}
+.account_edit_form .option-1-next .percent-cb-label{
+    color: #818181;
+}
+.account_edit_form .option-1-next .link .link-container{
+    width: 400px;
+    background: #f2f2f2;
+    text-align: center;
+    border-radius: 6px;
+    padding: 16px 0;
+    margin-left: 14px;
+}
+.account_edit_form .option-1-next .link a{
+    text-decoration: none;
+    color: #000;
+}
+.account_edit_form .option-1-next .link .large{
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.account_edit_form .option-1-next .link .small{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+}
+.account_edit_form .option-2-next .infor{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+}
+.account_edit_form .option-2-next .info-div{
+    width: 370px;
+    text-align: center;
+    background: #f1f1f1;
+    padding: 14px 10px;
+    border-radius: 6px;
+    margin-left: 16px;
+}
