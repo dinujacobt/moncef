@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : Mar 12, 2018, 9:32:48 PM
     Author     : dinu
 */
-
+@import url("../../css/popups.css");
 .user_account_edit{
     display: block;
     position: relative;
@@ -217,7 +217,7 @@ and open the template in the editor.
 }
 .account_edit_form .form-head .backward_icon{
     position: absolute;
-    left: -34px;
+    left: -44px;
     top: -4px;;
     width: 34px;
 }
@@ -243,7 +243,7 @@ and open the template in the editor.
     font-size: 14px;
     padding-left: 2px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .account_edit_form .fixed-padding{
     padding: 0 8px;
@@ -339,4 +339,106 @@ and open the template in the editor.
     padding: 14px 10px;
     border-radius: 6px;
     margin-left: 16px;
+}
+.autocaluculated_nums{
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.autocaluculated_nums .auto-mar{
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.autocaluculated_nums .item-c{
+    width: 134px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 160px;
+    margin-right: 28px;
+}
+.autocaluculated_nums .item-c.credit_icon{
+    cursor: pointer;
+}
+.autocaluculated_nums .item-c:last-child{
+    margin-right: 0
+}
+.autocaluculated_nums .item-c .full-im{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.autocaluculated_nums .item-c .num{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 98px;
+}
+.autocaluculated_nums .item-c .num .large{
+    margin: 0;
+    font-size: 38px;
+    line-height: 22px;
+    font-weight: 600;
+}
+.autocaluculated_nums .item-c .num  .small{
+    font-size: 10px;
+    font-weight: normal;
+}
+.autocaluculated_nums .item-c .footer-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -2px;
+}
+.autocaluculated_nums .item-c .footer-text .text{
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+}
+.account_modal{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.account_modal .modal-header.processing .heading{
+    height: 200px;
+}
+.account_modal .modal-header.processing .heading h3{
+    font-size: 24px;
+    font-family: inherit;
+    
+}
+.account_modal .modal-header.processing .heading h3 strong{
+    font-weight: 600;
+    width: 100%;
+}
+.account_modal .modal-header.processing .heading h3 span{
+    width: 100%;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: inherit;
+}
+.account_modal .modal-header.processing .heading h3 .ac-text{
+    font-size: 15px;
+}
+.account_modal .modal-body .success-btns .auto-margin{
+    width: 200px;
+    text-align: center;
+}
+.account_modal .modal-body .success-btns .btn.inb.edit_btn{
+        font-size: 14px;
+    padding: 6px;
+    font-family: inherit;
+}
+.account_modal .modal-body .success-btns .btn.inb.confirm_btn{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: inherit;
 }

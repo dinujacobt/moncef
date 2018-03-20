@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+        <link href="css/accounts.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="user_account_edit">
+            <div class="container">
+                <form class="account_edit_form" onsubmit="return mySubmitFunction(event)" id="account_edit_form_personal" method="post">
+                    <div class="form-head">
+                        <h3>Account <span>- Confidential</span></h3>
+                        <p class="confidential">Strictly confidential information. This information remains between thekontainer &AMP; you only.</p>
+                        <div class="backward_icon">
+                            <a href="#"><img class="img-responsive" src="images/left.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 no-padding">
+                        <div class="form-group">
+                            <label>Account Holder Name</label>
+                            <div class="input">
+                                <input placeholder="Account Holder Name" class="inp" type="text" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Bank Name</label>
+                            <div class="input">
+                                <input placeholder="Bank Name" class="inp" type="text" name="bank_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Bank Country</label>
+                            <div class="input">
+                                <select class="inp" name="country">
+                                    <option selected>United Arab Emirates</option>
+                                    <option> Africa </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Bank ID</label>
+                            <div class="input">
+                                <input placeholder="Bank ID" class="inp" type="text" name="city">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Bank Branch Location</label>
+                            <div class="input">
+                                <input placeholder="Bank Branch Location" class="inp" type="text" name="branch_location">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 no-padding">
+                        <div class="form-group">
+                            <label>Account Number</label>
+                            <div class="input">
+                                <input placeholder="Account Number" class="inp" type="text" name="account_number">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Account Name</label>
+                            <div class="input">
+                                <input placeholder="Account Name" class="inp" type="text" name="account_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Currency</label>
+                            <div class="input">
+                                <input placeholder="Currency" class="inp" type="text" name="currency">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>IBAN</label>
+                            <div class="input">
+                                <input placeholder="IBAN" class="inp" type="text" name="iban">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Swift / BIC</label>
+                            <div class="input">
+                                <input placeholder="Swift / BIC" class="inp" type="text" name="swift">
+                            </div>
+                        </div>
+                        <div class="submit_button">
+                            <button class="btn" type="submit" >SUBMIT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        
+    </body>
+
+</html>
