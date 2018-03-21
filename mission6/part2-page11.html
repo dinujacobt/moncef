@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+        <link href="css/accounts.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="user_account_edit">
+            <div class="container">
+                <div class="account_edit_form">
+                    <div class="form-head">
+                        <h3>History</h3>
+                        <div class="backward_icon">
+                            <a href="#"><img class="img-responsive" src="images/left.png" alt=""/></a>
+                        </div>
+                    </div>
+                    <div class="autocaluculated_nums">
+                        <div class="auto-mar">
+                            <div class="item-c">
+                                <div class="full-im">
+                                    <img class="img img-responsive" src="images/Account 2_Supporting-01.png" alt=""/>
+                                </div>
+                                <div class="num">
+                                    <p class="large">1</p>
+                                    <span class="small">spec</span>
+                                </div>
+                                <div class="footer-text">
+                                    <p class="text">closed spec</p>
+                                </div>
+                            </div>
+                            <div class="item-c">
+                                <div class="full-im">
+                                    <img class="img img-responsive" src="images/Account 2_Supporting-02.png" alt=""/>
+                                </div>
+                                <div class="num">
+                                    <p class="large">31.5K</p>
+                                    <span class="small">USD</span>
+                                </div>
+                                <div class="footer-text">
+                                    <p class="text">turnover</p>
+                                </div>
+                            </div>
+                            <div class="item-c">
+                                <div class="full-im">
+                                    <img class="img img-responsive" src="images/Account 2_Supporting-03.png" alt=""/>
+                                </div>
+                                <div class="num">
+                                    <p class="large">1.5K</p>
+                                    <span class="small">USD</span>
+                                </div>
+                                <div class="footer-text">
+                                    <p class="text">revenues</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="missing-details" class="modal fade popups close-btn in account_modal" role="dialog" style="display: block; padding-left: 17px;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header processing">
+                        <div class="heading">
+                            <h3>
+                                <strong>Missing account details</strong> 
+                                <br><span class="ac-number"> Please enter your bank details to proceed</span></h3>
+                        </div>
+                    </div>
+                    <div class="modal-body m-b-10">
+                        <div class="modal-loader">
+                            <div class="success-btns">
+                                <div class="auto-margin">
+                                    <button class="btn inb edit_btn">enter bank details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-close">
+                        <img src="images/close.png" data-toggle="tooltip" title="Close" class="img-responsive close-img close" data-dismiss="modal" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script>
+            $('#missing-details').modal('show');
+        </script>
+    </body>
+
+</html>

@@ -211,6 +211,9 @@ and open the template in the editor.
 .account_edit_form .form-group .input .inp.error{
     background: #f4a8a8;
 }
+.account_edit_form .form-group .input .inp.valid{
+    background: #afd879;
+}
 .account_edit_form .form-head{
     position: relative;
     margin-bottom: 10px;
@@ -412,8 +415,8 @@ and open the template in the editor.
 }
 .account_modal .modal-header.processing .heading h3{
     font-size: 24px;
-    font-family: inherit;
-    
+    font-family: 'Source Sans Pro', sans-serif;
+
 }
 .account_modal .modal-header.processing .heading h3 strong{
     font-weight: 600;
@@ -421,7 +424,7 @@ and open the template in the editor.
 }
 .account_modal .modal-header.processing .heading h3 span{
     width: 100%;
-    font-family: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-weight: inherit;
 }
@@ -433,12 +436,23 @@ and open the template in the editor.
     text-align: center;
 }
 .account_modal .modal-body .success-btns .btn.inb.edit_btn{
-        font-size: 14px;
+    font-size: 14px;
     padding: 6px;
-    font-family: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .account_modal .modal-body .success-btns .btn.inb.confirm_btn{
     font-size: 18px;
     font-weight: 400;
-    font-family: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.account_modal  .full_modal_close .close-btn span:first-child{
+    font-size: 24px;
+    padding-right: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.account_modal  .full_modal_close .close-btn span:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1px;
 }
